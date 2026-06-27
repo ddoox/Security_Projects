@@ -1,6 +1,6 @@
-# [Placeholder_name_todo_later]
+# CloudTrap
 
-Placeholder_name_todo_later is a cybersecurity lab deployed on AWS, designed to capture, log, and analyze real-world cyber threats.
+CloudTrap is a cybersecurity lab deployed on AWS, designed to capture, log, and analyze real-world cyber threats.
 
 Built entirely with Infrastructure as Code (Terraform), this project provisions a **Cowrie honeypot** to attract malicious actors via SSH/Telnet, and a **Wazuh SIEM** for real-time threat detection and log analysis.
 
@@ -15,3 +15,7 @@ Built entirely with Infrastructure as Code (Terraform), this project provisions 
 - Interactive SSH honeypot to capture brute-force attacks and malicious payloads.
 - Centralized SIEM logging and custom detection rules.
 - Secure, isolated networking with planned hybrid VPN integration.
+
+
+Architectonic decisions made during projects:
+- Connection to Wazuh in Cloud Native phase via AWS Session Manager Port Forwarding - instance don't need public open port and public IP

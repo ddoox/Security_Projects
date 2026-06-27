@@ -27,6 +27,6 @@ Beyond building projects, I actively sharpen my practical skills through hands-o
 
 Feel free to explore the project folders above, and check out my profiles below:
 
-- [TryHackMe](https://tryhackme.com/p/your-username "null")
+- [TryHackMe](https://tryhackme.com/p/ddoox "null")
     
-- [Credly](https://www.credly.com/users/your-username/badges "null")
+- [Credly](https://www.credly.com/users/dominik.dudek.sec "null")
