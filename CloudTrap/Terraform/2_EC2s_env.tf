@@ -3,6 +3,16 @@ provider "aws" {
   region = "us-east-1"
 }
 
+data "aws_ami" "latest_honeypot_image" {
+  most_recent = true
+  owners      = ["self"]
+
+  filter {
+    name   = "name"
+    values = ["packer-nginx-*"]
+  }
+}
+
 variable "availability_zone" {
   description = "Availability zone for the instances"
   default     = "us-east-1a"
@@ -97,6 +107,18 @@ resource "aws_security_group" "allow_external_icmp" {
         }
 }
 
+resource "aws_security_group" "allow_http" {
+    name        = "allow_http"
+    description = "Allow HTTP inbound traffic"
+    vpc_id      = aws_vpc.honeypot_vpc.id
+        ingress {
+            from_port   = 80
+            to_port     = 80
+            protocol    = "tcp"
+            cidr_blocks = ["0.0.0.0/0"]
+        }
+}
+
 
 # Instances
 
@@ -110,9 +132,14 @@ resource "aws_instance" "wazuh" {
 }
 
 resource "aws_instance" "honeypot" {
-    ami           = "ami-08f44e8eca9095668"
+    # ami           = "ami-08f44e8eca9095668"
+    ami           = data.aws_ami.latest_honeypot_image.id
     instance_type = "t3.micro"
-    vpc_security_group_ids = [aws_security_group.allow_ssh.id, aws_security_group.allow_external_icmp.id]
+    vpc_security_group_ids = [
+        aws_security_group.allow_ssh.id, 
+        aws_security_group.allow_external_icmp.id,
+        aws_security_group.allow_http.id
+    ]
     key_name = var.key_name
     subnet_id = aws_subnet.public_subnet.id
     availability_zone = var.availability_zone
