@@ -3,32 +3,6 @@ provider "aws" {
   region = "us-east-1"
 }
 
-data "aws_ami" "latest_honeypot_image" {
-  most_recent = true
-  owners      = ["self"]
-
-  filter {
-    name   = "name"
-    values = ["packer-nginx-*"]
-  }
-}
-
-variable "availability_zone" {
-  description = "Availability zone for the instances"
-  default     = "us-east-1a"
-}
-
-variable "ssh_port" {
-  description = "Port for SSH access"
-  default     = "22"
-}
-
-variable "key_name" {
-    description = "Name of the SSH key pair"
-    default     = "My_SSH_Pair"
-}
-
-
 # Networking
 
 resource "aws_vpc" "honeypot_vpc" {
@@ -62,8 +36,26 @@ resource "aws_route_table" "public_route_table" {
     }
 }
 
+# resource "aws_route_table" "private_route_table" {
+#     vpc_id = aws_vpc.honeypot_vpc.id
+# }
+
+# Temporary NAT Gateway for private subnet access to the Internet
+resource "aws_eip" "nat_eip" {
+  domain = "vpc"
+}
+
+resource "aws_nat_gateway" "honeypot_nat" {
+    allocation_id = aws_eip.nat_eip.id
+    subnet_id     = aws_subnet.public_subnet.id
+}
+
 resource "aws_route_table" "private_route_table" {
     vpc_id = aws_vpc.honeypot_vpc.id
+    route {
+            cidr_block     = "0.0.0.0/0"
+            nat_gateway_id = aws_nat_gateway.honeypot_nat.id
+        }
 }
 
 resource "aws_route_table_association" "public_route_table_association" {
@@ -77,76 +69,49 @@ resource "aws_route_table_association" "private_route_table_association" {
 }
 
 
-resource "aws_security_group" "allow_ssh" {
-    name        = "allow_ssh"
-    description = "Allow SSH inbound traffic"
-    vpc_id      = aws_vpc.honeypot_vpc.id
-        ingress {
-            from_port   = var.ssh_port
-            to_port     = var.ssh_port
-            protocol    = "tcp"
-            cidr_blocks = ["0.0.0.0/0"]
-        }
-        egress {
-            from_port   = var.ssh_port
-            to_port     = var.ssh_port
-            protocol    = "tcp"
-            cidr_blocks = ["10.0.1.0/24"]
-        }
-}
-
-resource "aws_security_group" "allow_external_icmp" {
-    name        = "allow_icmp"
-    description = "Allow ICMP outbound traffic for diagnostics"
-    vpc_id      = aws_vpc.honeypot_vpc.id
-        egress {
-            from_port   = "-1"
-            to_port     = "-1"
-            protocol    = "icmp"
-            cidr_blocks = ["0.0.0.0/0"]
-        }
-}
-
-resource "aws_security_group" "allow_http" {
-    name        = "allow_http"
-    description = "Allow HTTP inbound traffic"
-    vpc_id      = aws_vpc.honeypot_vpc.id
-        ingress {
-            from_port   = 80
-            to_port     = 80
-            protocol    = "tcp"
-            cidr_blocks = ["0.0.0.0/0"]
-        }
-}
-
-
 # Instances
 
 resource "aws_instance" "wazuh" {
-    ami           = "ami-08f44e8eca9095668"
-    instance_type = "t3.micro"
-    vpc_security_group_ids = [aws_security_group.allow_ssh.id]
+    # ami           = "ami-08f44e8eca9095668"
+    ami = data.aws_ami.latest_wazuh_image.id
+    instance_type = "m7i-flex.large"
+    vpc_security_group_ids = [
+        aws_security_group.allow_ssh.id,
+        aws_security_group.temporary_allow_Internet.id,
+        aws_security_group.allow_inbound_http.id
+    ]
     key_name = var.key_name
     subnet_id = aws_subnet.private_subnet.id
     availability_zone = var.availability_zone
+    private_ip = var.wazuh_manager_ip
 }
 
 resource "aws_instance" "honeypot" {
     # ami           = "ami-08f44e8eca9095668"
-    ami           = data.aws_ami.latest_honeypot_image.id
+    ami = data.aws_ami.latest_honeypot_image.id
     instance_type = "t3.micro"
     vpc_security_group_ids = [
         aws_security_group.allow_ssh.id, 
         aws_security_group.allow_external_icmp.id,
-        aws_security_group.allow_http.id
+        aws_security_group.allow_inbound_http.id,
+        aws_security_group.temporary_allow_Internet.id
     ]
     key_name = var.key_name
     subnet_id = aws_subnet.public_subnet.id
     availability_zone = var.availability_zone
+    private_ip = var.honeypot_ip
 }
 
 
 # Outputs
+
+output "honeypot_public_IP" {
+    value = aws_instance.honeypot.public_ip
+}
+
+output "honeypot_private_IP" {
+    value = aws_instance.honeypot.private_ip
+}
 
 output "wazuh_public_IP" {
     value = aws_instance.wazuh.public_ip
@@ -155,8 +120,3 @@ output "wazuh_public_IP" {
 output "wazuh_private_IP" {
     value = aws_instance.wazuh.private_ip
 }
-
-output "honeypot_public_IP" {
-    value = aws_instance.honeypot.public_ip
-}
-
