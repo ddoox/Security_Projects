@@ -1,7 +1,13 @@
-resource "aws_security_group" "allow_ssh" {
-    name        = "allow_ssh"
+resource "aws_security_group" "allow_ssh_honeypot" {
+    name        = "allow_ssh_honeypot"
     description = "Allow SSH inbound traffic"
     vpc_id      = aws_vpc.honeypot_vpc.id
+        ingress {
+            from_port   = var.honeypot_ssh_port
+            to_port     = var.honeypot_ssh_port
+            protocol    = "tcp"
+            cidr_blocks = ["0.0.0.0/0"]
+        }
         ingress {
             from_port   = var.ssh_port
             to_port     = var.ssh_port
@@ -15,6 +21,19 @@ resource "aws_security_group" "allow_ssh" {
             cidr_blocks = ["10.0.1.0/24"]
         }
 }
+
+resource "aws_security_group" "allow_ssh_wazuh" {
+    name        = "allow_ssh_wazuh"
+    description = "Allow SSH inbound traffic"
+    vpc_id      = aws_vpc.honeypot_vpc.id
+        ingress {
+            from_port   = var.ssh_port
+            to_port     = var.ssh_port
+            protocol    = "tcp"
+            cidr_blocks = ["0.0.0.0/0"]
+        }
+}
+
 
 resource "aws_security_group" "allow_external_icmp" {
     name        = "allow_icmp"
@@ -57,3 +76,29 @@ resource "aws_security_group" "temporary_allow_Internet" {
             cidr_blocks = ["0.0.0.0/0"]
         }
 }
+
+resource "aws_security_group" "wazuh_agent_ports" {
+    name        = "wazuh_agent_ports"
+    description = "Allow Wazuh agent ports for communication"
+    vpc_id      = aws_vpc.honeypot_vpc.id
+        egress {
+            from_port   = 1514
+            to_port     = 1515
+            protocol    = "tcp"
+            cidr_blocks = ["10.0.1.10/32"]
+        }
+}
+
+resource "aws_security_group" "wazuh_manager_ports" {
+    name        = "wazuh_manager_ports"
+    description = "Allow Wazuh manager ports for communication"
+    vpc_id      = aws_vpc.honeypot_vpc.id
+        ingress {
+            from_port   = 1514
+            to_port     = 1515
+            protocol    = "tcp"
+            cidr_blocks = ["10.0.2.10/32"]
+        }
+}
+
+

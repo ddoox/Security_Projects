@@ -28,6 +28,11 @@ variable "ssh_port" {
   default     = "22"
 }
 
+variable "honeypot_ssh_port" {
+  description = "Port for SSH access"
+  default     = "22222"
+}
+
 variable "key_name" {
     description = "Name of the SSH key pair"
     default     = "My_SSH_Pair"
