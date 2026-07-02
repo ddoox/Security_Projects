@@ -101,4 +101,37 @@ resource "aws_security_group" "wazuh_manager_ports" {
         }
 }
 
+resource "aws_security_group" "vpc_endpoints" {
+  name        = "vpc_endpoints"
+  description = "Security group for VPC Endpoints"
+  vpc_id      = aws_vpc.honeypot_vpc.id
 
+  ingress {
+    from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
+    cidr_blocks = [aws_subnet.private_subnet.cidr_block]
+  }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+
+
+# Security Group for EC2 instance using SSM
+resource "aws_security_group" "ec2_ssm_outbound" {
+  name        = "ec2_ssm_outbound"
+  description = "Allow outbound HTTPS for SSM Agent to VPC Endpoints"
+  vpc_id      = aws_vpc.honeypot_vpc.id
+
+  egress {
+    from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
+    security_groups = [aws_security_group.vpc_endpoints.id]
+  }
+}

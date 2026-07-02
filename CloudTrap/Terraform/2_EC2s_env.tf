@@ -7,6 +7,9 @@ provider "aws" {
 
 resource "aws_vpc" "honeypot_vpc" {
     cidr_block = "10.0.0.0/16"
+    # Enable DNS for VPC Endpoints
+    enable_dns_support   = true
+    enable_dns_hostnames = true
 }
 
 resource "aws_subnet" "private_subnet" {
@@ -76,20 +79,22 @@ resource "aws_instance" "wazuh" {
     ami = data.aws_ami.latest_wazuh_image.id
     instance_type = "m7i-flex.large"
     vpc_security_group_ids = [
-        aws_security_group.allow_ssh_wazuh.id,
-        aws_security_group.temporary_allow_Internet.id,
-        aws_security_group.allow_inbound_http.id,
-        aws_security_group.wazuh_manager_ports.id
+        # aws_security_group.allow_ssh_wazuh.id,
+        # aws_security_group.temporary_allow_Internet.id,
+        # aws_security_group.allow_inbound_http.id,
+        aws_security_group.wazuh_manager_ports.id,
+        aws_security_group.ec2_ssm_outbound.id
     ]
     key_name = var.key_name
     subnet_id = aws_subnet.private_subnet.id
     availability_zone = var.availability_zone
     private_ip = var.wazuh_manager_ip
+    iam_instance_profile = aws_iam_instance_profile.ssm_instance_profile.name
 
     root_block_device {
-    volume_size           = 30    # Rozmiar dysku w gigabajtach (GB)
-    volume_type           = "gp3" # Nowszy, bardziej wydajny i tańszy standard niż gp2
-    delete_on_termination = true  # Dysk zostanie usunięty przy niszczeniu instancji
+    volume_size           = 30    
+    volume_type           = "gp3"
+    delete_on_termination = true 
   }
 }
 
@@ -127,4 +132,9 @@ output "wazuh_public_IP" {
 
 output "wazuh_private_IP" {
     value = aws_instance.wazuh.private_ip
+}
+
+
+output "wazuh_instance_id" {
+    value = aws_instance.wazuh.id
 }
