@@ -6,12 +6,12 @@ This document serves as a chronological record of the development process, miles
 
 
 
-### Move Wazuh Manager to local env
-* **Cycle / Week:** 
-* **Status:** 
+### Move Wazuh Manager to home environment
+* **Week:** 2
+* **Status:** In Progress
 
 **🎯 Objectives:**
-* 
+* Move Wazuh Manager KVM on home server for AWS Cost reduction
 * 
 
 **✅ Accomplishments:**
@@ -19,8 +19,12 @@ This document serves as a chronological record of the development process, miles
 * 
 
 **🐛 Challenges & Troubleshooting:**
-* *Issue:* 
-* *Solution / Workaround:* 
+* *Issue:* Secure Networking - I have to find a way for agents to communicate with Wazuh without excessive exposure of the home server to the public Internet 
+* *Solution:* WireGuard Tunnel vs SSM Tunneling vs Cloudflare Tunnel vs Tailscale:
+	* Wireguard - Hardcore approach closest to my ICT heart, BUT I would need extra EC2 instance to be gateway + Elastic IP(I don't have static IP from ISP and my home server is always behind VPN which sometimes rotate IP) <-- routing would not be a problem, but it would generate extra cost + I would have to pay for it even when not in use to not "have fun" with reconfiguring agents and home configs
+	* SSM Tunneling - Works great for accessing Wazuh on EC2, but it is not tool for sending massive amounts of logs(beside the fact that I would have to search for a ways to reverse the tunnel direction)
+	* Cloudflare Tunnel - Sounded interesting, but after research it's not the answer. Interesting part "Instead of exposing a public IP, you install a lightweight daemon called `cloudflared` on your server" - but designed mostly for HTTP/S, can be used for other tcp traffic also, but there is better alternative for my type of project - Tailscale
+	* Tailscale - It has ACLs! Who doesn't love(and hate when they are not working) ACLs? Also can use the special auth keys for ephemeral instances - ideal solution for my Terraform + Packer(I hope to reach level when I only specify the number of running instances in Terraform and a few moments later I'll see them active in Manager ) --> Okay, so kinda WireGuard after all ![[Pasted image 20260703181426.png]]
 
 
 
@@ -32,7 +36,7 @@ This document serves as a chronological record of the development process, miles
 
 ### Terraform Introduction and AWS Setup
 * **Week:** Week 1
-* **Status:** In Progress
+* **Status:** Done
 
 **🎯 Objectives:**
 * Learn Terraform Basics
@@ -43,6 +47,7 @@ This document serves as a chronological record of the development process, miles
 * Packer - vendor independent(HashiCorp) tool for building AMI Images
 * Wazuh Manager + Agent deployment and connection
 * Phase 1 done - Wazuh Manager and Cowrie honeypot deployed on EC2s with secure access to Wazuh via AWS Systems Manager
+* Observed brute force attacks and analyzed crypto miner dropped on one instance
 
 **🐛 Challenges & Troubleshooting:**
 * *Issue:* Saving AMI state with minimizing cloud costs - Stopping EC2 between sessions will generate costs(EC2, EIP, EBS), but configuring everything every time from scratch will drive me crazy  
@@ -74,5 +79,26 @@ Logs from 17:35 - configuration checks. Real brute force attacks started from 19
 Some IPs
 ![[Pasted image 20260702202207.png]]
 
+
 Few more hotspots before leaving setup for night:
 ![[Pasted image 20260702205900.png]]
+=======
+
+
+
+
+![[Pasted image 20260703171321.png]]
+
+
+![[Pasted image 20260703171404.png]]
+
+![[Pasted image 20260703171421.png]]
+![[Pasted image 20260703171210.png]]
+
+
+https://hybrid-analysis.com/sample/94f2e4d8d4436874785cd14e6e6d403507b8750852f7f2040352069a75da4c00
+
+
+![[Pasted image 20260703172224.png]]
+
+

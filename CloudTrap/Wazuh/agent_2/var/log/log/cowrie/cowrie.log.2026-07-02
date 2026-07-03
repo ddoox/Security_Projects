@@ -1,0 +1,55 @@
+2026-07-02T18:48:15.161392Z [-] Reading configuration from ['etc/cowrie.cfg']
+2026-07-02T18:48:16.649647Z [-] Python Version 3.11.15 (main, May 24 2026, 00:00:00) [GCC 11.5.0 20240719 (Red Hat 11.5.0-5)]
+2026-07-02T18:48:16.649698Z [-] Twisted Version 26.4.0
+2026-07-02T18:48:16.649714Z [-] Cowrie Version 3.0.0
+2026-07-02T18:48:16.649726Z [-] Sensor UUID: 9636821a-7646-11f1-b414-0201d1f8f73d
+2026-07-02T18:48:16.653357Z [-] Loaded output engine: jsonlog
+2026-07-02T18:48:16.655214Z [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 26.4.0 (/opt/cowrie/cowrie-env/bin/python3.11 3.11.15) starting up.
+2026-07-02T18:48:16.655297Z [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2026-07-02T18:48:16.662390Z [-] CowrieSSHFactory starting on 2222
+2026-07-02T18:48:16.663122Z [cowrie.ssh.factory.CowrieSSHFactory#info] Starting factory <cowrie.ssh.factory.CowrieSSHFactory object at 0x7f731458afd0>
+2026-07-02T18:48:16.809478Z [-] Ready to accept SSH connections
+2026-07-02T18:48:16.813236Z [twisted.internet.base#info] Received SIGTERM, shutting down.
+2026-07-02T18:48:16.813882Z [-] (TCP Port 2222 Closed)
+2026-07-02T18:48:16.814065Z [cowrie.ssh.factory.CowrieSSHFactory#info] Stopping factory <cowrie.ssh.factory.CowrieSSHFactory object at 0x7f731458afd0>
+2026-07-02T18:48:16.814286Z [twisted.internet.base#info] Main loop terminated.
+2026-07-02T18:48:16.814487Z [twisted.scripts._twistd_unix.UnixAppLogger#info] Server Shut Down.
+2026-07-02T18:55:03.341156Z [-] Reading configuration from ['etc/cowrie.cfg']
+2026-07-02T18:55:03.541543Z [-] Python Version 3.11.15 (main, May 24 2026, 00:00:00) [GCC 11.5.0 20240719 (Red Hat 11.5.0-5)]
+2026-07-02T18:55:03.541588Z [-] Twisted Version 26.4.0
+2026-07-02T18:55:03.541602Z [-] Cowrie Version 3.0.0
+2026-07-02T18:55:03.541612Z [-] Sensor UUID: 9636821a-7646-11f1-b414-0201d1f8f73d
+2026-07-02T18:55:03.542650Z [-] Loaded output engine: jsonlog
+2026-07-02T18:55:03.543954Z [twisted.scripts._twistd_unix.UnixAppLogger#info] twistd 26.4.0 (/opt/cowrie/cowrie-env/bin/python3.11 3.11.15) starting up.
+2026-07-02T18:55:03.544033Z [twisted.scripts._twistd_unix.UnixAppLogger#info] reactor class: twisted.internet.epollreactor.EPollReactor.
+2026-07-02T18:55:03.550096Z [-] CowrieSSHFactory starting on 2222
+2026-07-02T18:55:03.550689Z [cowrie.ssh.factory.CowrieSSHFactory#info] Starting factory <cowrie.ssh.factory.CowrieSSHFactory object at 0x7f2dc0234510>
+2026-07-02T18:55:03.603056Z [-] Ready to accept SSH connections
+2026-07-02T19:31:35.283060Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 143.244.179.77:60312 (10.0.2.24:2222) [session: 96eee1a33b6f]
+2026-07-02T19:31:35.284067Z [HoneyPotSSHTransport,0,143.244.179.77] Remote SSH version: GET / HTTP/1.1
+2026-07-02T19:31:35.284778Z [HoneyPotSSHTransport,0,143.244.179.77] Bad protocol version identification: b'GET / HTTP/1.1'
+2026-07-02T19:31:35.285113Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-02T19:31:35.285207Z [HoneyPotSSHTransport,0,143.244.179.77] Connection lost after 0.0 seconds
+2026-07-02T19:31:35.463191Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 143.244.179.77:60326 (10.0.2.24:2222) [session: bc7802207e8a]
+2026-07-02T19:31:35.463800Z [HoneyPotSSHTransport,1,143.244.179.77] Remote SSH version: GET /favicon.ico HTTP/1.1
+2026-07-02T19:31:35.464253Z [HoneyPotSSHTransport,1,143.244.179.77] Bad protocol version identification: b'GET /favicon.ico HTTP/1.1'
+2026-07-02T19:31:35.464497Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-02T19:31:35.464575Z [HoneyPotSSHTransport,1,143.244.179.77] Connection lost after 0.0 seconds
+2026-07-02T23:20:30.694808Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 157.20.189.179:59710 (10.0.2.24:2222) [session: 4642980db699]
+2026-07-02T23:20:30.954349Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-02T23:20:30.954529Z [HoneyPotSSHTransport,2,157.20.189.179] Connection lost after 0.3 seconds
+2026-07-02T23:28:04.697653Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 157.20.189.179:39656 (10.0.2.24:2222) [session: 34631e2eb97a]
+2026-07-02T23:28:04.699186Z [HoneyPotSSHTransport,3,157.20.189.179] Remote SSH version: SSH-2.0-phpseclib_1.0 (openssl)
+2026-07-02T23:28:04.959115Z [HoneyPotSSHTransport,3,157.20.189.179] SSH client hassh fingerprint: 89da11ae925d8e42f773c1908a42c97c
+2026-07-02T23:28:04.960152Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2026-07-02T23:28:04.960229Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-02T23:28:04.960287Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-02T23:28:05.494708Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-02T23:28:05.793671Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-02T23:28:06.078283Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-02T23:28:06.079052Z [HoneyPotSSHTransport,3,157.20.189.179] login attempt [b'root'/b'100.56.248.62'] failed
+2026-07-02T23:28:07.081004Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' failed auth b'password'
+2026-07-02T23:28:07.081215Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-02T23:28:07.349222Z [HoneyPotSSHTransport,3,157.20.189.179] Got remote error, code 11 reason: b''
+2026-07-02T23:28:07.349566Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-02T23:28:07.349668Z [HoneyPotSSHTransport,3,157.20.189.179] Connection lost after 2.7 seconds
