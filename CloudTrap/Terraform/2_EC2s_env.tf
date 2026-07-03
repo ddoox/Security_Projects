@@ -102,6 +102,7 @@ resource "aws_instance" "honeypot" {
     # ami           = "ami-08f44e8eca9095668"
     ami = data.aws_ami.latest_honeypot_image.id
     instance_type = "t3.micro"
+    count = 3
     vpc_security_group_ids = [
         aws_security_group.allow_ssh_honeypot.id, 
         aws_security_group.allow_external_icmp.id,
@@ -112,18 +113,18 @@ resource "aws_instance" "honeypot" {
     key_name = var.key_name
     subnet_id = aws_subnet.public_subnet.id
     availability_zone = var.availability_zone
-    private_ip = var.honeypot_ip
+    # private_ip = var.honeypot_ip
 }
 
 
 # Outputs
 
-output "honeypot_public_IP" {
-    value = aws_instance.honeypot.public_ip
+output "honeypot_public_IPs" {
+    value = aws_instance.honeypot[*].public_ip
 }
 
-output "honeypot_private_IP" {
-    value = aws_instance.honeypot.private_ip
+output "honeypot_private_IPs" {
+    value = aws_instance.honeypot[*].private_ip
 }
 
 output "wazuh_public_IP" {

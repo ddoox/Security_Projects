@@ -97,7 +97,7 @@ resource "aws_security_group" "wazuh_manager_ports" {
             from_port   = 1514
             to_port     = 1515
             protocol    = "tcp"
-            cidr_blocks = ["10.0.2.10/32"]
+            cidr_blocks = ["10.0.2.0/24"]
         }
 }
 

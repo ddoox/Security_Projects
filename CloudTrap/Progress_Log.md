@@ -4,6 +4,30 @@ This document serves as a chronological record of the development process, miles
 
 
 
+
+
+### Move Wazuh Manager to local env
+* **Cycle / Week:** 
+* **Status:** 
+
+**🎯 Objectives:**
+* 
+* 
+
+**✅ Accomplishments:**
+* 
+* 
+
+**🐛 Challenges & Troubleshooting:**
+* *Issue:* 
+* *Solution / Workaround:* 
+
+
+
+
+
+
+
 ---
 
 ### Terraform Introduction and AWS Setup
@@ -49,3 +73,6 @@ Logs from 17:35 - configuration checks. Real brute force attacks started from 19
 
 Some IPs
 ![[Pasted image 20260702202207.png]]
+
+Few more hotspots before leaving setup for night:
+![[Pasted image 20260702205900.png]]
