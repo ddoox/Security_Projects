@@ -12,10 +12,10 @@ This document serves as a chronological record of the development process, miles
 
 **🎯 Objectives:**
 * Move Wazuh Manager KVM on home server for AWS Cost reduction
-* 
+* Create Tailscale connection between AWS and home lab
 
 **✅ Accomplishments:**
-* 
+* Fully automated honeypots deployment with Tailscale connectivity via IaC
 * 
 
 **🐛 Challenges & Troubleshooting:**
@@ -24,12 +24,20 @@ This document serves as a chronological record of the development process, miles
 	* Wireguard - Hardcore approach closest to my ICT heart, BUT I would need extra EC2 instance to be gateway + Elastic IP(I don't have static IP from ISP and my home server is always behind VPN which sometimes rotate IP) <-- routing would not be a problem, but it would generate extra cost + I would have to pay for it even when not in use to not "have fun" with reconfiguring agents and home configs
 	* SSM Tunneling - Works great for accessing Wazuh on EC2, but it is not tool for sending massive amounts of logs(beside the fact that I would have to search for a ways to reverse the tunnel direction)
 	* Cloudflare Tunnel - Sounded interesting, but after research it's not the answer. Interesting part "Instead of exposing a public IP, you install a lightweight daemon called `cloudflared` on your server" - but designed mostly for HTTP/S, can be used for other tcp traffic also, but there is better alternative for my type of project - Tailscale
-	* Tailscale - It has ACLs! Who doesn't love(and hate when they are not working) ACLs? Also can use the special auth keys for ephemeral instances - ideal solution for my Terraform + Packer(I hope to reach level when I only specify the number of running instances in Terraform and a few moments later I'll see them active in Manager ) --> Okay, so kinda WireGuard after all ![[Pasted image 20260703181426.png]]
+	* Tailscale - It has ACLs! Who doesn't love(and hate when they are not working) ACLs? Also can use the special auth keys for ephemeral instances - ideal solution for my Terraform + Packer(I hope to reach level when I only specify the number of running instances in Terraform and a few moments later I'll see them active in Manager ) --> Okay, so kinda WireGuard after all: ![[Pasted image 20260703181426.png]]
+
+
+Example IaC outcome:
+
+
+![[Pasted image 20260705164345.png]]
 
 
 
+![[Pasted image 20260705163905.png]]
 
 
+![[Pasted image 20260705163928.png]]
 
 
 ---
@@ -60,7 +68,7 @@ This document serves as a chronological record of the development process, miles
 
 1st bigger success - Wazuh Server/indexer/dashboard connected with agent, both on EC2s, manager accessed via SSH forwarded port 
 
-![Wazuh_Dashboard](Images/Wazuh_dashboard_after_installation.png)
+![Wazuh_Dashboard](Wazuh_dashboard_after_installation.png)
 
 
 Wazuh acces without Internet access
@@ -102,3 +110,8 @@ https://hybrid-analysis.com/sample/94f2e4d8d4436874785cd14e6e6d403507b8750852f7f
 ![[Pasted image 20260703172224.png]]
 
 
+Next day:
+![[Pasted image 20260704164117.png]]
+
+
+![[Pasted image 20260704164454.png]]

@@ -1,0 +1,50 @@
+<group name="cowrie,honeypot,">
+
+  <!-- Base rule for Cowrie logs -->
+  <rule id="100010" level="3">
+    <decoded_as>json</decoded_as>
+    <field name="eventid">^cowrie\.</field>
+    <description>Event: Cowrie Honeypot</description>
+  </rule>
+
+  <!-- Successful login -->
+  <rule id="100011" level="14">
+    <if_sid>100010</if_sid>
+    <field name="eventid">^cowrie.login.success$</field>
+    <description>Cowrie: Successful login (Attacker in the system). User: $(username), IP: $(src_ip)</description>
+    <mitre>
+      <id>T1078</id>
+    </mitre>
+  </rule>
+
+  <!-- Failed login attempts -->
+  <rule id="100012" level="7">
+    <if_sid>100010</if_sid>
+    <field name="eventid">^cowrie.login.failed$</field>
+    <description>Cowrie: Failed login attempt. IP: $(src_ip) User: $(username) Password: $(password)</description>
+    <mitre>
+      <id>T1110</id>
+    </mitre>
+  </rule>
+
+  <!-- Remote Command Execution inside Cowrie) -->
+  <rule id="100013" level="15">
+    <if_sid>100010</if_sid>
+    <field name="eventid">^cowrie.command.input$</field>
+    <description>Cowrie: Attacker entered command -> $(input)</description>
+    <mitre>
+      <id>T1059</id>
+    </mitre>
+  </rule>
+  
+  <!-- File Download -->
+  <rule id="100014" level="16">
+    <if_sid>100010</if_sid>
+    <field name="eventid">^cowrie.session.file_download$</field>
+    <description>Cowrie: File download attempt (URL: $(url))</description>
+    <mitre>
+      <id>T1105</id>
+    </mitre>
+  </rule>
+
+</group>

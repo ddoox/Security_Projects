@@ -1,0 +1,4 @@
+.terraform*
+/terraform.tfstate*
+/My_SSH_Pair.pem
+sensitive.tf
