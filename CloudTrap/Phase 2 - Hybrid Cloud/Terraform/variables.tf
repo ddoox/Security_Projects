@@ -55,15 +55,15 @@ variable "wazuh_manager_ip" {
 
 variable "honeypot_hostnames" {
   type    = list(string)
-  default = ["prod-db-01", "mail-server", "gateway-03", "dev-redis"]
+  default = ["prod-db-01", "mail-server", "gateway-03", "dev-redis", "prod-db-01", "test-web-01"]
 }
 
 variable "honeypot_users" {
   type    = list(string)
-  default = ["admin", "root", "kali", "ubuntu"]
+  default = ["admin", "root", "kali", "generated_16_char_password", "Passphrase", "admin"]
 }
 
 variable "honeypot_passwords" {
   type    = list(string)
-  default = ["admin123", "toor", "kali", "qwerty"]
+  default = ["admin123", "toor", "kali", "N:~$kxU{f1s@)Y.J","stroller_evolution_peroxide_sleek_gambling_clay", "*"]
 }

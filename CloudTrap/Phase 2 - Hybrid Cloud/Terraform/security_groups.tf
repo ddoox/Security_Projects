@@ -85,7 +85,7 @@ resource "aws_security_group" "wazuh_agent_ports" {
             from_port   = 1514
             to_port     = 1515
             protocol    = "tcp"
-            cidr_blocks = ["100.87.168.87/32"]
+            cidr_blocks = ["100.73.81.69/32"]
         }
 }
 

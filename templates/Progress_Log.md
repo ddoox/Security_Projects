@@ -1,6 +1,6 @@
 # 📓 Project Progress Log
 
-This document serves as a chronological record of the development process, milestones achieved, and technical challenges resolved during the creation of this project.
+This document serves as a record of the development process, milestones achieved, and technical challenges resolved during the creation of this project.
 
 
 
@@ -18,7 +18,7 @@ This document serves as a chronological record of the development process, miles
 * 
 * 
 
-**🐛 Challenges & Troubleshooting:**
+**🐛 Decisions:**
 * *Issue:* 
 * *Solution / Workaround:* 
 

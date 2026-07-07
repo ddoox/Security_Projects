@@ -1,14 +1,17 @@
 # 📓 Project Progress Log
 
-This document serves as a chronological record of the development process, milestones achieved, and technical challenges resolved during the creation of this project.
+This document serves as a record of the development process, milestones achieved, and technical challenges resolved during the creation of this project.
 
+
+
+### Phase 2 Completed - Break for AD project - Phase 3 & 4 TBD after AD
 
 
 
 
 ### Move Wazuh Manager to home environment
 * **Week:** 2
-* **Status:** In Progress
+* **Status:** Done
 
 **🎯 Objectives:**
 * Move Wazuh Manager KVM on home server for AWS Cost reduction
@@ -16,9 +19,8 @@ This document serves as a chronological record of the development process, miles
 
 **✅ Accomplishments:**
 * Fully automated honeypots deployment with Tailscale connectivity via IaC
-* 
 
-**🐛 Challenges & Troubleshooting:**
+**🐛 Decisions:**
 * *Issue:* Secure Networking - I have to find a way for agents to communicate with Wazuh without excessive exposure of the home server to the public Internet 
 * *Solution:* WireGuard Tunnel vs SSM Tunneling vs Cloudflare Tunnel vs Tailscale:
 	* Wireguard - Hardcore approach closest to my ICT heart, BUT I would need extra EC2 instance to be gateway + Elastic IP(I don't have static IP from ISP and my home server is always behind VPN which sometimes rotate IP) <-- routing would not be a problem, but it would generate extra cost + I would have to pay for it even when not in use to not "have fun" with reconfiguring agents and home configs
@@ -57,7 +59,7 @@ Example IaC outcome:
 * Phase 1 done - Wazuh Manager and Cowrie honeypot deployed on EC2s with secure access to Wazuh via AWS Systems Manager
 * Observed brute force attacks and analyzed crypto miner dropped on one instance
 
-**🐛 Challenges & Troubleshooting:**
+**🐛 Decisions:**
 * *Issue:* Saving AMI state with minimizing cloud costs - Stopping EC2 between sessions will generate costs(EC2, EIP, EBS), but configuring everything every time from scratch will drive me crazy  
 * *Solution:* Create custom AMI or search for automated solution -> HashiCorp Packer vs EC2 Image Builder -> Packer as vendor independent solution -> Terraform for whole infrastructure and Packer AMI images for latest builds
 

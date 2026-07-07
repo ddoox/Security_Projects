@@ -99,10 +99,10 @@ resource "aws_route_table_association" "private_route_table_association" {
 # }
 
 resource "aws_instance" "honeypot" {
-    # ami           = "ami-08f44e8eca9095668"
+    # ami           = "ami-05a16b5b6a3fe92f6"
     ami = data.aws_ami.latest_honeypot_image.id
     instance_type = "t3.micro"
-    count = 10
+    count = 5
     vpc_security_group_ids = [
         aws_security_group.allow_ssh_honeypot.id, 
         # aws_security_group.allow_external_icmp.id,
@@ -119,7 +119,7 @@ resource "aws_instance" "honeypot" {
     user_data = <<-EOF
               #!/bin/bash
               
-              # Zmienne
+              # Variables
               TS_AUTHKEY="${var.tailscale_authkey}" 
               INSTANCE_HOSTNAME="cloudtrap-honeypot-${count.index}-$(date +%m%d%y-%H%M%S)"
 
@@ -132,17 +132,65 @@ resource "aws_instance" "honeypot" {
               chown ec2-user:ec2-user /opt/cowrie/etc/cowrie.cfg /opt/cowrie/etc/userdb.txt
 
 
-              # 1. Ustawienie unikalnego hostname'a 
+              # Set hostname for the instance
               hostnamectl set-hostname $INSTANCE_HOSTNAME
               
-              # 2. Uruchomienie i autoryzacja Tailscale z nadaną nazwą
-              # --accept-routes=false zapobiega nadpisywaniu domyślnego routingu VPC
+              # Tailscale registration
               tailscale up --authkey=$TS_AUTHKEY --hostname=$INSTANCE_HOSTNAME --accept-routes=false
               
-              # Poczekaj chwilę, aż interfejs tailscale0 w pełni powstanie
               sleep 5
               
-              # 3. Uruchomienie agenta Wazuh
+              systemctl enable wazuh-agent
+              systemctl start wazuh-agent
+              systemctl enable cowrie
+              systemctl start cowrie
+
+              EOF
+
+}
+
+
+resource "aws_instance" "honeypot_temp" {
+    ami = data.aws_ami.latest_honeypot_image.id
+    instance_type = "t3.micro"
+    count = 1
+    vpc_security_group_ids = [
+        aws_security_group.allow_ssh_honeypot.id, 
+        # aws_security_group.allow_external_icmp.id,
+        # aws_security_group.allow_inbound_http.id,
+        # aws_security_group.temporary_allow_Internet.id,
+        aws_security_group.wazuh_agent_ports.id,
+        aws_security_group.tailscale_P2P.id
+    ]
+    key_name = var.key_name
+    subnet_id = aws_subnet.public_subnet.id
+    availability_zone = var.availability_zone
+    # private_ip = var.honeypot_ip
+
+    user_data = <<-EOF
+              #!/bin/bash
+              
+              # Variables
+              TS_AUTHKEY="${var.tailscale_authkey}" 
+              INSTANCE_HOSTNAME="cloudtrap-honeypot-5-$(date +%m%d%y-%H%M%S)"
+
+              HOSTNAME="test-web-01"
+              USER="admin"
+              PASSWORD="*"
+            
+              sed -i "s/^hostname = svr04/hostname = $HOSTNAME/" /opt/cowrie/etc/cowrie.cfg
+              echo "$USER:0:$PASSWORD" > /opt/cowrie/etc/userdb.txt
+              chown ec2-user:ec2-user /opt/cowrie/etc/cowrie.cfg /opt/cowrie/etc/userdb.txt
+
+
+              # Set hostname for the instance
+              hostnamectl set-hostname $INSTANCE_HOSTNAME
+              
+              # Tailscale registration
+              tailscale up --authkey=$TS_AUTHKEY --hostname=$INSTANCE_HOSTNAME --accept-routes=false
+              
+              sleep 5
+              
               systemctl enable wazuh-agent
               systemctl start wazuh-agent
               systemctl enable cowrie

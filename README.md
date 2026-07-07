@@ -1,25 +1,32 @@
 # 🛡️ Security Projects Portfolio
 
-Welcome to my cybersecurity portfolio repository! This space serves as a centralized hub for my practical, hands-on projects focused on Blue Teaming, Cloud Security, Infrastructure as Code (IaC), and Threat Detection.
-
-The goal of this repository is to demonstrate my ability to design secure architectures, deploy security monitoring tools, and analyze real-world cyber threats using industry-standard technologies.
+Welcome to my cybersecurity portfolio repository! This repository serves as a hub for my practical projects focused on Blue Teaming, Cloud Security, Infrastructure as Code and Threat Detection.
 
 ## 📂 Featured Projects
 
 - [**CloudTrap: AWS Honeypot & Wazuh SIEM**](./CloudTrap "null") A cloud-native cybersecurity lab deployed on AWS and provisioned entirely with Terraform. It features a Cowrie honeypot to capture SSH/Telnet brute-force attacks and malicious payloads, integrated with a Wazuh SIEM for real-time threat detection. The project highlights secure, isolated VPC networking and is designed to evolve into an hybrid cloud architecture using home server with KVM and WireGuard.
 
-- [**Project 2 Name - Coming Soon**](./Project2 "null")
+
+## 🚀 Upcoming Projects & Labs
+
+* **CloudTrap Phase 3 & 4: SOAR & Threat Intelligence Integration** Expanding the current cloud architecture by integrating Wazuh with a SOAR platform for automated remediation, and deploying a MISP server to manage and utilize captured IoCs.
+
+* **Active Directory Attack & Detection Simulation** Building a Windows domain environment monitored by Sysmon to simulate common AD attacks, engineer detection rules, and analyze malicious behavior in a centralized SIEM. 
+
+* **Vulnerability Management Lifecycle Lab** Performing infrastructure scans using Nessus/OpenVAS to practice risk assessment, vulnerability prioritization, and patch management/remediation. 
+
+* **Malware Analysis Sandbox Environment** Setting up an isolated, safe-to-fail environment dedicated to performing static/dynamic analysis on payloads captured by the honeypot.
 
 ## 🛠️ Skills & Technologies Demonstrated
 
 Throughout the projects in this repository, I utilize and showcase the following technologies and skills:
 
-- **Cloud & Infrastructure:** AWS (EC2, VPC, IAM), Terraform, Docker, KVM, VPN (WireGuard).
-    
+- **Cloud & Infrastructure:** AWS (EC2, VPC, IAM), Terraform, KVM, VPN (WireGuard).
+
 - **Security & SIEM:** Wazuh, Cowrie Honeypot, Log Analysis, Custom Detection Rules.
-    
+
 - **Systems Administration:** Linux (Debian/Ubuntu/Arch), Secure Network Configuration, Firewall Management (iptables/UFW).
-    
+
 
 ## 📫 Profiles & Continuous Learning
 
