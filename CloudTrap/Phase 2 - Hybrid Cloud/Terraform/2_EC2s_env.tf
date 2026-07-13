@@ -99,7 +99,6 @@ resource "aws_route_table_association" "private_route_table_association" {
 # }
 
 resource "aws_instance" "honeypot" {
-    # ami           = "ami-05a16b5b6a3fe92f6"
     ami = data.aws_ami.latest_honeypot_image.id
     instance_type = "t3.micro"
     count = 5
@@ -150,7 +149,35 @@ resource "aws_instance" "honeypot" {
 }
 
 
-resource "aws_instance" "honeypot_temp" {
+# Outputs
+
+output "honeypot_public_IPs" {
+    value = aws_instance.honeypot[*].public_ip
+}
+
+output "honeypot_private_IPs" {
+    value = aws_instance.honeypot[*].private_ip
+}
+
+# output "wazuh_public_IP" {
+#     value = aws_instance.wazuh.public_ip
+# }
+
+# output "wazuh_private_IP" {
+#     value = aws_instance.wazuh.private_ip
+# }
+
+
+# output "wazuh_instance_id" {
+#     value = aws_instance.wazuh.id
+# }
+
+
+
+
+
+
+resource "aws_instance" "honeypot_easy" {
     ami = data.aws_ami.latest_honeypot_image.id
     instance_type = "t3.micro"
     count = 1
@@ -172,11 +199,11 @@ resource "aws_instance" "honeypot_temp" {
               
               # Variables
               TS_AUTHKEY="${var.tailscale_authkey}" 
-              INSTANCE_HOSTNAME="cloudtrap-honeypot-5-$(date +%m%d%y-%H%M%S)"
+              INSTANCE_HOSTNAME="cloudtrap-honeypot-6-$(date +%m%d%y-%H%M%S)"
 
-              HOSTNAME="test-web-01"
-              USER="admin"
-              PASSWORD="*"
+              HOSTNAME="ssh-test"
+              USER="root"
+              PASSWORD="123456"
             
               sed -i "s/^hostname = svr04/hostname = $HOSTNAME/" /opt/cowrie/etc/cowrie.cfg
               echo "$USER:0:$PASSWORD" > /opt/cowrie/etc/userdb.txt
@@ -200,26 +227,3 @@ resource "aws_instance" "honeypot_temp" {
 
 }
 
-
-# Outputs
-
-output "honeypot_public_IPs" {
-    value = aws_instance.honeypot[*].public_ip
-}
-
-output "honeypot_private_IPs" {
-    value = aws_instance.honeypot[*].private_ip
-}
-
-# output "wazuh_public_IP" {
-#     value = aws_instance.wazuh.public_ip
-# }
-
-# output "wazuh_private_IP" {
-#     value = aws_instance.wazuh.private_ip
-# }
-
-
-# output "wazuh_instance_id" {
-#     value = aws_instance.wazuh.id
-# }

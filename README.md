@@ -9,13 +9,13 @@ Welcome to my cybersecurity portfolio repository! This repository serves as a hu
 
 ## 🚀 Upcoming Projects & Labs
 
-* **CloudTrap Phase 3 & 4: SOAR & Threat Intelligence Integration** Expanding the current cloud architecture by integrating Wazuh with a SOAR platform for automated remediation, and deploying a MISP server to manage and utilize captured IoCs.
+* **CloudTrap Phase 3 & 4: SOAR & Threat Intelligence Integration** - Expanding the current cloud architecture by integrating Wazuh with a SOAR platform for automated remediation, and deploying a MISP server to manage and utilize captured IoCs.
 
-* **Active Directory Attack & Detection Simulation** Building a Windows domain environment monitored by Sysmon to simulate common AD attacks, engineer detection rules, and analyze malicious behavior in a centralized SIEM. 
+* **Active Directory Attack & Detection Simulation** - Building a Windows domain environment monitored by Sysmon to simulate common AD attacks, engineer detection rules, and analyze malicious behavior in a centralized SIEM. 
 
-* **Vulnerability Management Lifecycle Lab** Performing infrastructure scans using Nessus/OpenVAS to practice risk assessment, vulnerability prioritization, and patch management/remediation. 
+* **Vulnerability Management Lifecycle Lab** - Performing infrastructure scans using Nessus/OpenVAS to practice risk assessment, vulnerability prioritization, and patch management/remediation. 
 
-* **Malware Analysis Sandbox Environment** Setting up an isolated, safe-to-fail environment dedicated to performing static/dynamic analysis on payloads captured by the honeypot.
+* **Malware Analysis Sandbox Environment** - Setting up an isolated, safe-to-fail environment dedicated to performing static/dynamic analysis on payloads captured by the honeypot.
 
 ## 🛠️ Skills & Technologies Demonstrated
 

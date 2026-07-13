@@ -1,0 +1,363 @@
+2026-07-09T00:10:02.845030Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.92.40.5:48722 (10.0.2.251:2222) [session: a6e5e943303d]
+2026-07-09T00:10:02.942962Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:10:02.943149Z [HoneyPotSSHTransport,985,91.92.40.5] Connection lost after 0.1 seconds
+2026-07-09T00:10:47.919085Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.92.40.5:52676 (10.0.2.251:2222) [session: 562d3c33357e]
+2026-07-09T00:10:48.158471Z [HoneyPotSSHTransport,986,91.92.40.5] Remote SSH version: SSH-2.0-Go
+2026-07-09T00:10:48.159127Z [HoneyPotSSHTransport,986,91.92.40.5] SSH client hassh fingerprint: 2ec37a7cc8daf20b10e1ad6221061ca5
+2026-07-09T00:10:48.159861Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ssh-rsa'
+2026-07-09T00:10:48.159927Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:10:48.159976Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:10:49.527665Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T00:10:49.690506Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T00:10:50.265098Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
+2026-07-09T00:10:50.540920Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-09T00:10:50.541931Z [HoneyPotSSHTransport,986,91.92.40.5] login attempt [b'root'/b'root'] failed
+2026-07-09T00:10:51.543562Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' failed auth b'password'
+2026-07-09T00:10:51.543798Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T00:10:52.073302Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:10:52.073479Z [HoneyPotSSHTransport,986,91.92.40.5] Connection lost after 4.2 seconds
+2026-07-09T00:12:21.677352Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.92.40.5:48206 (10.0.2.251:2222) [session: d2af3a0c92c5]
+2026-07-09T00:12:22.183559Z [HoneyPotSSHTransport,987,91.92.40.5] Remote SSH version: SSH-2.0-Go
+2026-07-09T00:12:22.184140Z [HoneyPotSSHTransport,987,91.92.40.5] SSH client hassh fingerprint: 2ec37a7cc8daf20b10e1ad6221061ca5
+2026-07-09T00:12:22.184916Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ssh-rsa'
+2026-07-09T00:12:22.184981Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:12:22.185032Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:12:23.634382Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T00:12:23.667423Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T00:12:24.184188Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
+2026-07-09T00:12:25.154406Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-09T00:12:25.154794Z [HoneyPotSSHTransport,987,91.92.40.5] login attempt [b'root'/b'admin'] failed
+2026-07-09T00:12:26.156426Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' failed auth b'password'
+2026-07-09T00:12:26.156686Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T00:12:26.719613Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:12:26.719785Z [HoneyPotSSHTransport,987,91.92.40.5] Connection lost after 5.0 seconds
+2026-07-09T00:13:45.029392Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.92.40.5:51934 (10.0.2.251:2222) [session: 7747777e66cc]
+2026-07-09T00:13:45.539573Z [HoneyPotSSHTransport,988,91.92.40.5] Remote SSH version: SSH-2.0-Go
+2026-07-09T00:13:45.540128Z [HoneyPotSSHTransport,988,91.92.40.5] SSH client hassh fingerprint: 2ec37a7cc8daf20b10e1ad6221061ca5
+2026-07-09T00:13:45.541343Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ssh-rsa'
+2026-07-09T00:13:45.541419Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:13:45.541472Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:13:46.886272Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T00:13:46.886576Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T00:13:47.275686Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
+2026-07-09T00:13:47.926134Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-09T00:13:47.926526Z [HoneyPotSSHTransport,988,91.92.40.5] login attempt [b'root'/b'password'] failed
+2026-07-09T00:13:48.928167Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' failed auth b'password'
+2026-07-09T00:13:48.928367Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T00:13:49.475449Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:13:49.475618Z [HoneyPotSSHTransport,988,91.92.40.5] Connection lost after 4.4 seconds
+2026-07-09T00:15:07.760757Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.92.40.5:32782 (10.0.2.251:2222) [session: 904f05bb0786]
+2026-07-09T00:15:08.267303Z [HoneyPotSSHTransport,989,91.92.40.5] Remote SSH version: SSH-2.0-Go
+2026-07-09T00:15:08.274365Z [HoneyPotSSHTransport,989,91.92.40.5] SSH client hassh fingerprint: 2ec37a7cc8daf20b10e1ad6221061ca5
+2026-07-09T00:15:08.275176Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ssh-rsa'
+2026-07-09T00:15:08.275242Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:15:08.275294Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:15:09.623683Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T00:15:09.624010Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T00:15:10.023422Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
+2026-07-09T00:15:10.607942Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-09T00:15:10.608312Z [HoneyPotSSHTransport,989,91.92.40.5] login attempt [b'root'/b'123456'] failed
+2026-07-09T00:15:11.609959Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' failed auth b'password'
+2026-07-09T00:15:11.610153Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T00:15:12.111742Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:15:12.111923Z [HoneyPotSSHTransport,989,91.92.40.5] Connection lost after 4.4 seconds
+2026-07-09T00:16:34.874147Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.92.40.5:42802 (10.0.2.251:2222) [session: 4dd66a811132]
+2026-07-09T00:16:34.917238Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:16:34.917419Z [HoneyPotSSHTransport,990,91.92.40.5] Connection lost after 0.0 seconds
+2026-07-09T00:16:35.008181Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.92.40.5:42808 (10.0.2.251:2222) [session: 17e0dcae297a]
+2026-07-09T00:16:35.018279Z [HoneyPotSSHTransport,991,91.92.40.5] Remote SSH version: SSH-2.0-Go
+2026-07-09T00:16:35.099989Z [HoneyPotSSHTransport,991,91.92.40.5] SSH client hassh fingerprint: 2ec37a7cc8daf20b10e1ad6221061ca5
+2026-07-09T00:16:35.101036Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ssh-rsa'
+2026-07-09T00:16:35.101106Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:16:35.101158Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:16:35.303810Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T00:16:35.304134Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T00:16:35.433833Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
+2026-07-09T00:16:35.944807Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-09T00:16:35.945195Z [HoneyPotSSHTransport,991,91.92.40.5] login attempt [b'root'/b'toor'] failed
+2026-07-09T00:16:36.946804Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' failed auth b'password'
+2026-07-09T00:16:36.947017Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T00:16:37.306494Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:16:37.306664Z [HoneyPotSSHTransport,991,91.92.40.5] Connection lost after 2.3 seconds
+2026-07-09T00:17:59.741185Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.92.40.5:50506 (10.0.2.251:2222) [session: c3f600c06755]
+2026-07-09T00:17:59.741848Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:17:59.741929Z [HoneyPotSSHTransport,992,91.92.40.5] Connection lost after 0.0 seconds
+2026-07-09T00:42:19.735283Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.203.245.192:48934 (10.0.2.251:2222) [session: 26c83b370c80]
+2026-07-09T00:42:29.741225Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:42:29.741412Z [HoneyPotSSHTransport,993,172.203.245.192] Connection lost after 10.0 seconds
+2026-07-09T00:42:29.744448Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.203.245.192:40236 (10.0.2.251:2222) [session: e32a6d2b948a]
+2026-07-09T00:42:29.745015Z [HoneyPotSSHTransport,994,172.203.245.192] Remote SSH version: MGLNDD_44.203.83.123_22
+2026-07-09T00:42:29.745317Z [HoneyPotSSHTransport,994,172.203.245.192] Bad protocol version identification: b'MGLNDD_44.203.83.123_22'
+2026-07-09T00:42:29.745477Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:42:29.745538Z [HoneyPotSSHTransport,994,172.203.245.192] Connection lost after 0.0 seconds
+2026-07-09T01:58:27.171421Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 64.62.156.182:20724 (10.0.2.251:2222) [session: 043549c3ccf6]
+2026-07-09T01:58:27.172971Z [HoneyPotSSHTransport,995,64.62.156.182] Remote SSH version:  {  w\xaes\x8bm%ݰ7\xa7v\x93\xc3p\x9e\xc3rq\x8d\xf8\xc4g\xe2\xfd96y\x89  \xc0/\xc0+\xc0\xc0\xc0\xc0	\xc0\xc0
+2026-07-09T01:58:27.174116Z [HoneyPotSSHTransport,995,64.62.156.182] Bad protocol version identification: b'\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\xaes\x8b\x17m\x13%\xdd\xb07\xa7v\x93\xc3p\x0e\x9e\xc3rq\x0f\x8d\xf8\x10\xc4g\xe2\xfd96y\x89\x00\x00\x1a\xc0/\xc0+\xc0\x11\xc0\x07\xc0\x13\xc0\t\xc0\x14\xc0'
+2026-07-09T01:58:27.174330Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T01:58:27.174401Z [HoneyPotSSHTransport,995,64.62.156.182] Connection lost after 0.0 seconds
+2026-07-09T04:49:49.300925Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 65.49.1.172:59244 (10.0.2.251:2222) [session: cd1a2466a651]
+2026-07-09T04:49:49.301522Z [HoneyPotSSHTransport,996,65.49.1.172] Remote SSH version: GET / HTTP/1.1
+2026-07-09T04:49:49.301831Z [HoneyPotSSHTransport,996,65.49.1.172] Bad protocol version identification: b'GET / HTTP/1.1'
+2026-07-09T04:49:49.301993Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T04:49:49.302064Z [HoneyPotSSHTransport,996,65.49.1.172] Connection lost after 0.0 seconds
+2026-07-09T05:17:20.722500Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 83.216.125.233:40952 (10.0.2.251:2222) [session: 3a15958d64ff]
+2026-07-09T05:17:20.724721Z [HoneyPotSSHTransport,997,83.216.125.233] Remote SSH version: SSH-2.0-OpenSSH_6.7p1 Raspbian-5+deb8u3
+2026-07-09T05:17:20.838978Z [HoneyPotSSHTransport,997,83.216.125.233] SSH client hassh fingerprint: 46c5bd9748882f1a5d75753fb7d47a61
+2026-07-09T05:17:20.840021Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T05:17:20.840106Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T05:17:20.840160Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T05:17:20.974955Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 83.216.125.233:40954 (10.0.2.251:2222) [session: d02b539a731b]
+2026-07-09T05:17:20.977315Z [HoneyPotSSHTransport,998,83.216.125.233] Remote SSH version: SSH-2.0-OpenSSH_6.7p1 Raspbian-5+deb8u3
+2026-07-09T05:17:21.091761Z [HoneyPotSSHTransport,998,83.216.125.233] SSH client hassh fingerprint: 46c5bd9748882f1a5d75753fb7d47a61
+2026-07-09T05:17:21.092876Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T05:17:21.092952Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T05:17:21.093004Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T05:17:21.378410Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T05:17:21.533000Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T05:17:21.646150Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'pi' trying auth b'none'
+2026-07-09T05:17:21.676394Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T05:17:21.760104Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'pi' trying auth b'password'
+2026-07-09T05:17:21.760486Z [HoneyPotSSHTransport,997,83.216.125.233] login attempt [b'pi'/b'raspberry'] failed
+2026-07-09T05:17:21.833210Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T05:17:21.946527Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'pi' trying auth b'none'
+2026-07-09T05:17:22.060992Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'pi' trying auth b'password'
+2026-07-09T05:17:22.061386Z [HoneyPotSSHTransport,998,83.216.125.233] login attempt [b'pi'/b'raspberryraspberry993311'] failed
+2026-07-09T05:17:22.762683Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'pi' failed auth b'password'
+2026-07-09T05:17:22.762880Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T05:17:22.878015Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T05:17:22.878182Z [HoneyPotSSHTransport,997,83.216.125.233] Connection lost after 2.2 seconds
+2026-07-09T05:17:23.062155Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'pi' failed auth b'password'
+2026-07-09T05:17:23.062353Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T05:17:23.177777Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T05:17:23.177959Z [HoneyPotSSHTransport,998,83.216.125.233] Connection lost after 2.2 seconds
+2026-07-09T06:26:18.407003Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 66.132.172.200:14962 (10.0.2.251:2222) [session: fef26829fdca]
+2026-07-09T06:26:18.455900Z [HoneyPotSSHTransport,999,66.132.172.200] Remote SSH version: SSH-2.0-Go
+2026-07-09T06:26:18.456489Z [HoneyPotSSHTransport,999,66.132.172.200] SSH client hassh fingerprint: 873a5fb5fedc2d4f8638ebde4abc6cfc
+2026-07-09T06:26:18.457277Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T06:26:18.457344Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T06:26:18.457396Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T06:26:18.560189Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T06:26:33.535587Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T06:26:33.535763Z [HoneyPotSSHTransport,999,66.132.172.200] Connection lost after 15.1 seconds
+2026-07-09T07:54:43.415955Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 71.6.199.87:44128 (10.0.2.251:2222) [session: 9a1d9c5e0d13]
+2026-07-09T07:54:43.416534Z [HoneyPotSSHTransport,1000,71.6.199.87] Remote SSH version: SSH-2.0-Go
+2026-07-09T07:54:43.517867Z [HoneyPotSSHTransport,1000,71.6.199.87] SSH client hassh fingerprint: 084386fa7ae5039bcf6f07298a05a227
+2026-07-09T07:54:43.518800Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T07:54:43.518871Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T07:54:43.518924Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T07:54:43.677617Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T07:54:53.481007Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T07:54:53.481183Z [HoneyPotSSHTransport,1000,71.6.199.87] Connection lost after 10.1 seconds
+2026-07-09T08:08:19.007589Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 45.142.154.91:24412 (10.0.2.251:2222) [session: efd7ccfa957b]
+2026-07-09T08:08:19.431401Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 45.142.154.91:24590 (10.0.2.251:2222) [session: 3622028ecd34]
+2026-07-09T08:08:19.431972Z [HoneyPotSSHTransport,1002,45.142.154.91] Remote SSH version: SSH-2.0-Go
+2026-07-09T08:08:19.643963Z [HoneyPotSSHTransport,1002,45.142.154.91] SSH client hassh fingerprint: 2aec6b44b06bec95d73f66b5d30cb69a
+2026-07-09T08:08:19.644783Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T08:08:19.644854Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T08:08:19.644905Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T08:08:19.857519Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T08:08:19.857866Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T08:08:19.857981Z [HoneyPotSSHTransport,1001,45.142.154.91] Connection lost after 0.8 seconds
+2026-07-09T08:08:34.432350Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T08:08:34.432527Z [HoneyPotSSHTransport,1002,45.142.154.91] Connection lost after 15.0 seconds
+2026-07-09T09:27:29.070889Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 18.116.101.220:50608 (10.0.2.251:2222) [session: 0a9093281325]
+2026-07-09T09:27:29.072011Z [HoneyPotSSHTransport,1003,18.116.101.220] Remote SSH version: 
+2026-07-09T09:27:29.072341Z [HoneyPotSSHTransport,1003,18.116.101.220] Bad protocol version identification: b''
+2026-07-09T09:27:29.072511Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T09:27:29.072580Z [HoneyPotSSHTransport,1003,18.116.101.220] Connection lost after 0.0 seconds
+2026-07-09T09:30:36.279543Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 18.116.101.220:31282 (10.0.2.251:2222) [session: c66b917fa2ba]
+2026-07-09T09:30:36.280167Z [HoneyPotSSHTransport,1004,18.116.101.220] Remote SSH version: SSH-2.0-Go
+2026-07-09T09:30:36.292401Z [HoneyPotSSHTransport,1004,18.116.101.220] SSH client hassh fingerprint: e54ef3ec27fe1fea7ab64d3fa05359fd
+2026-07-09T09:30:36.293431Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ssh-ed25519'
+2026-07-09T09:30:36.293500Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T09:30:36.293554Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T09:30:36.310391Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T09:30:36.310783Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T09:30:36.310893Z [HoneyPotSSHTransport,1004,18.116.101.220] Connection lost after 0.0 seconds
+2026-07-09T10:35:27.027217Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 198.235.24.9:60042 (10.0.2.251:2222) [session: 9f002b0e4411]
+2026-07-09T10:35:28.002837Z [HoneyPotSSHTransport,1005,198.235.24.9] Remote SSH version: SSH-2.0-ZGrab ZGrab SSH Survey
+2026-07-09T10:35:29.048908Z [HoneyPotSSHTransport,1005,198.235.24.9] SSH client hassh fingerprint: dd9bcf093c355da7000132131cb36fd0
+2026-07-09T10:35:29.049873Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group-exchange-sha256' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T10:35:29.049945Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-md5' b'none'
+2026-07-09T10:35:29.049996Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-md5' b'none'
+2026-07-09T10:35:35.065236Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T10:35:35.065406Z [HoneyPotSSHTransport,1005,198.235.24.9] Connection lost after 8.0 seconds
+2026-07-09T12:13:46.916982Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 52.14.35.59:32590 (10.0.2.251:2222) [session: 0dc7943af631]
+2026-07-09T12:13:46.917549Z [HoneyPotSSHTransport,1006,52.14.35.59] Remote SSH version: 
+2026-07-09T12:13:46.917846Z [HoneyPotSSHTransport,1006,52.14.35.59] Bad protocol version identification: b''
+2026-07-09T12:13:46.918012Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T12:13:46.918080Z [HoneyPotSSHTransport,1006,52.14.35.59] Connection lost after 0.0 seconds
+2026-07-09T12:14:42.883316Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 52.14.35.59:20538 (10.0.2.251:2222) [session: 2374e20190c4]
+2026-07-09T12:14:42.971441Z [HoneyPotSSHTransport,1007,52.14.35.59] Remote SSH version: SSH-2.0-Go
+2026-07-09T12:14:42.972092Z [HoneyPotSSHTransport,1007,52.14.35.59] SSH client hassh fingerprint: e54ef3ec27fe1fea7ab64d3fa05359fd
+2026-07-09T12:14:42.972940Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ssh-ed25519'
+2026-07-09T12:14:42.973009Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T12:14:42.973061Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T12:14:43.091723Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T12:14:43.092065Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T12:14:43.092153Z [HoneyPotSSHTransport,1007,52.14.35.59] Connection lost after 0.2 seconds
+2026-07-09T14:01:52.188583Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 165.154.41.56:60136 (10.0.2.251:2222) [session: eeaf25fefc83]
+2026-07-09T14:01:53.050246Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T14:01:53.050436Z [HoneyPotSSHTransport,1008,165.154.41.56] Connection lost after 0.9 seconds
+2026-07-09T14:01:53.272879Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 165.154.41.56:60622 (10.0.2.251:2222) [session: e94b93475db9]
+2026-07-09T14:01:53.290830Z [HoneyPotSSHTransport,1009,165.154.41.56] Remote SSH version: SSH-2.0-OpenSSH_7.4
+2026-07-09T14:01:53.385583Z [HoneyPotSSHTransport,1009,165.154.41.56] SSH client hassh fingerprint: ec9ea89c70f5fc71cf61061bff5e4740
+2026-07-09T14:01:53.386495Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T14:01:53.386573Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T14:01:53.386626Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T14:01:53.710098Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T14:01:53.710282Z [HoneyPotSSHTransport,1009,165.154.41.56] Connection lost after 0.4 seconds
+2026-07-09T14:01:55.023088Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 165.154.41.56:32942 (10.0.2.251:2222) [session: c627174eb31a]
+2026-07-09T14:01:55.070035Z [HoneyPotSSHTransport,1010,165.154.41.56] Remote SSH version: SSH-2.0-OpenSSH_7.4
+2026-07-09T14:01:55.070662Z [HoneyPotSSHTransport,1010,165.154.41.56] SSH client hassh fingerprint: e788c657d1a22971d5026526ffd2e918
+2026-07-09T14:01:55.071292Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2026-07-09T14:01:55.071358Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-cbc' b'hmac-md5' b'none'
+2026-07-09T14:01:55.071409Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-cbc' b'hmac-md5' b'none'
+2026-07-09T14:01:55.527563Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T14:01:55.527733Z [HoneyPotSSHTransport,1010,165.154.41.56] Connection lost after 0.5 seconds
+2026-07-09T14:15:25.021044Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 183.234.72.66:43916 (10.0.2.251:2222) [session: 4d85d7d42000]
+2026-07-09T14:15:25.266889Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T14:15:25.267107Z [HoneyPotSSHTransport,1011,183.234.72.66] Connection lost after 0.2 seconds
+2026-07-09T16:12:45.077382Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 54.197.86.219:20012 (10.0.2.251:2222) [session: e89f1f5c4285]
+2026-07-09T16:12:45.125222Z [HoneyPotSSHTransport,1012,54.197.86.219] Remote SSH version: SSH-2.0-Go
+2026-07-09T16:12:45.125810Z [HoneyPotSSHTransport,1012,54.197.86.219] SSH client hassh fingerprint: 9052c4ab4164c78256e71143dcfc7eac
+2026-07-09T16:12:45.126913Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T16:12:45.126979Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T16:12:45.127031Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T16:12:45.211738Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T16:12:45.214032Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T16:12:45.214168Z [HoneyPotSSHTransport,1012,54.197.86.219] Connection lost after 0.1 seconds
+2026-07-09T16:47:41.044998Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 183.234.72.66:38850 (10.0.2.251:2222) [session: 9e37a784f51b]
+2026-07-09T16:47:41.045553Z [HoneyPotSSHTransport,1013,183.234.72.66] Remote SSH version: SSH-2.0-phpseclib_1.0 (openssl, gmp)
+2026-07-09T16:47:41.351659Z [HoneyPotSSHTransport,1013,183.234.72.66] SSH client hassh fingerprint: 89da11ae925d8e42f773c1908a42c97c
+2026-07-09T16:47:41.352452Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2026-07-09T16:47:41.352520Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T16:47:41.352572Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T16:47:42.053624Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T16:47:42.431237Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T16:47:42.756758Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-09T16:47:42.757787Z [HoneyPotSSHTransport,1013,183.234.72.66] login attempt [b'root'/b'abc@123'] failed
+2026-07-09T16:47:43.759433Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' failed auth b'password'
+2026-07-09T16:47:43.759652Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T16:47:44.087199Z [HoneyPotSSHTransport,1013,183.234.72.66] Got remote error, code 11 reason: b''
+2026-07-09T16:47:44.087568Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T16:47:44.087671Z [HoneyPotSSHTransport,1013,183.234.72.66] Connection lost after 3.0 seconds
+2026-07-09T17:06:41.536453Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 74.207.252.24:44342 (10.0.2.251:2222) [session: ac4d391fe502]
+2026-07-09T17:06:41.537278Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T17:06:41.537376Z [HoneyPotSSHTransport,1014,74.207.252.24] Connection lost after 0.0 seconds
+2026-07-09T17:07:45.791431Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 74.207.252.24:47688 (10.0.2.251:2222) [session: da89cfca6884]
+2026-07-09T17:07:45.856200Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T17:07:45.856366Z [HoneyPotSSHTransport,1015,74.207.252.24] Connection lost after 0.1 seconds
+2026-07-09T17:07:45.947434Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 74.207.252.24:47720 (10.0.2.251:2222) [session: ae66a9f711fe]
+2026-07-09T17:07:45.951698Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 74.207.252.24:47710 (10.0.2.251:2222) [session: d3eac04e975b]
+2026-07-09T17:07:45.952823Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 74.207.252.24:47702 (10.0.2.251:2222) [session: d77c516160ab]
+2026-07-09T17:07:45.953674Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 74.207.252.24:47724 (10.0.2.251:2222) [session: 51235575f778]
+2026-07-09T17:07:46.005153Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 74.207.252.24:47740 (10.0.2.251:2222) [session: 3c1a202caa3e]
+2026-07-09T17:07:46.012227Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 74.207.252.24:47746 (10.0.2.251:2222) [session: d2227ac021a7]
+2026-07-09T17:07:46.040574Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T17:07:46.040988Z [HoneyPotSSHTransport,1016,74.207.252.24] Connection lost after 0.1 seconds
+2026-07-09T17:07:46.041864Z [HoneyPotSSHTransport,1020,74.207.252.24] Remote SSH version: SSH-2.0-Nmap_SSH2_Enum_Algos
+2026-07-09T17:07:46.043398Z [HoneyPotSSHTransport,1017,74.207.252.24] Remote SSH version: SSH-1.5-Nmap-SSH1-Hostkey
+2026-07-09T17:07:46.044284Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T17:07:46.044410Z [HoneyPotSSHTransport,1017,74.207.252.24] Connection lost after 0.1 seconds
+2026-07-09T17:07:46.045357Z [HoneyPotSSHTransport,1018,74.207.252.24] Remote SSH version: SSH-1.5-NmapNSE_1.0
+2026-07-09T17:07:46.046338Z [HoneyPotSSHTransport,1019,74.207.252.24] Remote SSH version: SSH-2.0-OpenSSH_9.2p1 Debian-2+deb12u3
+2026-07-09T17:07:46.046953Z [HoneyPotSSHTransport,1021,74.207.252.24] Remote SSH version: SSH-2.0-libssh2_1.10.0
+2026-07-09T17:07:46.047411Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T17:07:46.047491Z [HoneyPotSSHTransport,1018,74.207.252.24] Connection lost after 0.1 seconds
+2026-07-09T17:07:46.149568Z [HoneyPotSSHTransport,1020,74.207.252.24] SSH client hassh fingerprint: a20aced7c9824fd804f59e68dd801ad3
+2026-07-09T17:07:46.150799Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] Disconnecting with error, code 3
+	reason: b"couldn't match all kex parts"
+2026-07-09T17:07:46.151131Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T17:07:46.152385Z [HoneyPotSSHTransport,1020,74.207.252.24] Connection lost after 0.1 seconds
+2026-07-09T17:07:46.153278Z [HoneyPotSSHTransport,1021,74.207.252.24] SSH client hassh fingerprint: b4b8ae3d7241d2c1dc54b4df7e8c19d1
+2026-07-09T17:07:46.154490Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T17:07:46.154592Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T17:07:46.154674Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T17:07:46.266316Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 74.207.252.24:47760 (10.0.2.251:2222) [session: 76274fcc684e]
+2026-07-09T17:07:46.352365Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T17:07:46.352816Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T17:07:46.353036Z [HoneyPotSSHTransport,1022,74.207.252.24] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2026-07-09T17:07:46.416559Z [HoneyPotSSHTransport,1022,74.207.252.24] SSH client hassh fingerprint: e788c657d1a22971d5026526ffd2e918
+2026-07-09T17:07:46.417541Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] Disconnecting with error, code 3
+	reason: b"couldn't match all kex parts"
+2026-07-09T17:07:46.417800Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T17:07:46.417869Z [HoneyPotSSHTransport,1022,74.207.252.24] Connection lost after 0.2 seconds
+2026-07-09T17:07:46.451876Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'bfqxy' trying auth b'none'
+2026-07-09T17:07:46.551204Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T17:07:46.551377Z [HoneyPotSSHTransport,1021,74.207.252.24] Connection lost after 0.5 seconds
+2026-07-09T17:07:46.567648Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 74.207.252.24:47762 (10.0.2.251:2222) [session: 390033679dcc]
+2026-07-09T17:07:46.650688Z [HoneyPotSSHTransport,1023,74.207.252.24] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2026-07-09T17:07:46.716991Z [HoneyPotSSHTransport,1023,74.207.252.24] SSH client hassh fingerprint: e788c657d1a22971d5026526ffd2e918
+2026-07-09T17:07:46.717728Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-rsa'
+2026-07-09T17:07:46.717795Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-cbc' b'hmac-md5' b'none'
+2026-07-09T17:07:46.717845Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-cbc' b'hmac-md5' b'none'
+2026-07-09T17:07:46.901143Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T17:07:46.901346Z [HoneyPotSSHTransport,1023,74.207.252.24] Connection lost after 0.3 seconds
+2026-07-09T17:07:46.966798Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 74.207.252.24:47766 (10.0.2.251:2222) [session: 621663a08ee1]
+2026-07-09T17:07:47.050147Z [HoneyPotSSHTransport,1024,74.207.252.24] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2026-07-09T17:07:47.115687Z [HoneyPotSSHTransport,1024,74.207.252.24] SSH client hassh fingerprint: e788c657d1a22971d5026526ffd2e918
+2026-07-09T17:07:47.116703Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T17:07:47.116849Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-cbc' b'hmac-md5' b'none'
+2026-07-09T17:07:47.116946Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-cbc' b'hmac-md5' b'none'
+2026-07-09T17:07:47.320177Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T17:07:47.320406Z [HoneyPotSSHTransport,1024,74.207.252.24] Connection lost after 0.4 seconds
+2026-07-09T17:07:47.386284Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 74.207.252.24:47780 (10.0.2.251:2222) [session: ebe3304ef9e8]
+2026-07-09T17:07:47.472445Z [HoneyPotSSHTransport,1025,74.207.252.24] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2026-07-09T17:07:47.538136Z [HoneyPotSSHTransport,1025,74.207.252.24] SSH client hassh fingerprint: e788c657d1a22971d5026526ffd2e918
+2026-07-09T17:07:47.540553Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] Disconnecting with error, code 3
+	reason: b"couldn't match all kex parts"
+2026-07-09T17:07:47.541053Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T17:07:47.541141Z [HoneyPotSSHTransport,1025,74.207.252.24] Connection lost after 0.2 seconds
+2026-07-09T17:07:47.683703Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 74.207.252.24:47788 (10.0.2.251:2222) [session: a2aac227de57]
+2026-07-09T17:07:47.770953Z [HoneyPotSSHTransport,1026,74.207.252.24] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2026-07-09T17:07:47.834923Z [HoneyPotSSHTransport,1026,74.207.252.24] SSH client hassh fingerprint: e788c657d1a22971d5026526ffd2e918
+2026-07-09T17:07:47.835701Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] Disconnecting with error, code 3
+	reason: b"couldn't match all kex parts"
+2026-07-09T17:07:47.835923Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T17:07:47.836008Z [HoneyPotSSHTransport,1026,74.207.252.24] Connection lost after 0.2 seconds
+2026-07-09T17:07:47.985232Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 74.207.252.24:47798 (10.0.2.251:2222) [session: 22c098f5c2ce]
+2026-07-09T17:07:48.072407Z [HoneyPotSSHTransport,1027,74.207.252.24] Remote SSH version: SSH-2.0-Nmap-SSH2-Hostkey
+2026-07-09T17:07:48.102163Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T17:07:48.102318Z [HoneyPotSSHTransport,1019,74.207.252.24] Connection lost after 2.1 seconds
+2026-07-09T17:07:48.140662Z [HoneyPotSSHTransport,1027,74.207.252.24] SSH client hassh fingerprint: e788c657d1a22971d5026526ffd2e918
+2026-07-09T17:07:48.141467Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group14-sha1' key alg=b'ssh-ed25519'
+2026-07-09T17:07:48.141539Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-cbc' b'hmac-md5' b'none'
+2026-07-09T17:07:48.141605Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-cbc' b'hmac-md5' b'none'
+2026-07-09T17:07:48.321965Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T17:07:48.322184Z [HoneyPotSSHTransport,1027,74.207.252.24] Connection lost after 0.3 seconds
+2026-07-09T17:11:38.936866Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 103.203.57.11:58208 (10.0.2.251:2222) [session: b637b7b637c1]
+2026-07-09T17:11:38.938744Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T17:11:38.938876Z [HoneyPotSSHTransport,1028,103.203.57.11] Connection lost after 0.0 seconds
+2026-07-09T20:23:46.979007Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 143.198.143.122:54564 (10.0.2.251:2222) [session: 17322955066b]
+2026-07-09T20:23:46.980910Z [HoneyPotSSHTransport,1029,143.198.143.122] Remote SSH version: GET / HTTP/1.1
+2026-07-09T20:23:46.981252Z [HoneyPotSSHTransport,1029,143.198.143.122] Bad protocol version identification: b'GET / HTTP/1.1'
+2026-07-09T20:23:46.981433Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T20:23:46.981498Z [HoneyPotSSHTransport,1029,143.198.143.122] Connection lost after 0.0 seconds
+2026-07-09T20:23:47.128886Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 143.198.143.122:54580 (10.0.2.251:2222) [session: 210b1811cfa8]
+2026-07-09T20:23:47.129476Z [HoneyPotSSHTransport,1030,143.198.143.122] Remote SSH version: GET /favicon.ico HTTP/1.1
+2026-07-09T20:23:47.129779Z [HoneyPotSSHTransport,1030,143.198.143.122] Bad protocol version identification: b'GET /favicon.ico HTTP/1.1'
+2026-07-09T20:23:47.129988Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T20:23:47.130057Z [HoneyPotSSHTransport,1030,143.198.143.122] Connection lost after 0.0 seconds
+2026-07-09T20:25:36.009725Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.230.168.179:35061 (10.0.2.251:2222) [session: e8119a2f7694]
+2026-07-09T20:25:36.010937Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T20:25:36.011059Z [HoneyPotSSHTransport,1031,91.230.168.179] Connection lost after 0.0 seconds
+2026-07-09T20:25:36.089943Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.230.168.84:38247 (10.0.2.251:2222) [session: 6472ddef3fcb]
+2026-07-09T20:25:46.220483Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T20:25:46.220805Z [HoneyPotSSHTransport,1032,91.230.168.84] Connection lost after 10.1 seconds
+2026-07-09T20:25:59.143210Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.230.168.82:38021 (10.0.2.251:2222) [session: fabc73ad8e10]
+2026-07-09T20:25:59.143890Z [HoneyPotSSHTransport,1033,91.230.168.82] Remote SSH version: b ^ع\x86\xd6$\xd1\xd07\xdawב\xa1<\xeb\xed\xc3\xed%\xa1\xb3O\xef\xd0\xd3,c \xfd\xa2O:ݍ\xb4\xd7\xc05_	0\x84s:i]p\xd4h\xca<\xfbG\xe5\xfa\xea \x8a  3 g\xc0\x9e\xc0\xa2 \x9e 9 k\xc0\x9f\xc0\xa3 \x9f E \xbe \x88 \xc4 \x9a\xc0\xc0	\xc0#\xc0\xac\xc0\xae\xc0+\xc0
+2026-07-09T20:25:59.146145Z [HoneyPotSSHTransport,1033,91.230.168.82] Bad protocol version identification: b'\x16\x03\x03\x02b\x01\x00\x02^\x03\x03\xd8\xb9\x86\xd6$\xd1\xd07\x1b\xdaw\x18\xd7\x91\xa1\x03<\xeb\xed\xc3\xed%\x1c\xa1\xb3O\xef\xd0\xd3,c\x17 \xfd\xa2O\x18:\xdd\x8d\xb4\xd7\xc05_\t0\x06\x84s:i]p\xd4h\x12\xca<\xfbG\xe5\xfa\x19\xea\x00\x8a\x00\x16\x003\x00g\xc0\x9e\xc0\xa2\x00\x9e\x009\x00k\xc0\x9f\xc0\xa3\x00\x9f\x00E\x00\xbe\x00\x88\x00\xc4\x00\x9a\xc0\x08\xc0\t\xc0#\xc0\xac\xc0\xae\xc0+\xc0'
+2026-07-09T20:25:59.146416Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T20:25:59.146496Z [HoneyPotSSHTransport,1033,91.230.168.82] Connection lost after 0.0 seconds
+2026-07-09T20:25:59.313076Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.230.168.181:58495 (10.0.2.251:2222) [session: 5ab18aa21b2f]
+2026-07-09T20:26:02.323102Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T20:26:02.324417Z [HoneyPotSSHTransport,1034,91.230.168.181] Connection lost after 3.0 seconds
+2026-07-09T20:28:08.439780Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.230.168.61:48479 (10.0.2.251:2222) [session: f1a2e03e45db]
+2026-07-09T20:28:08.751432Z [HoneyPotSSHTransport,1035,91.230.168.61] Remote SSH version: SSH-2.0-perlssh
+2026-07-09T20:28:09.014452Z [HoneyPotSSHTransport,1035,91.230.168.61] SSH client hassh fingerprint: 3c0eaacec19ba322a90a5541dac09a06
+2026-07-09T20:28:09.015272Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group-exchange-sha256' key alg=b'ssh-rsa'
+2026-07-09T20:28:09.015351Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-md5' b'none'
+2026-07-09T20:28:09.015405Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-md5' b'none'
+2026-07-09T20:28:09.728425Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T20:28:09.728605Z [HoneyPotSSHTransport,1035,91.230.168.61] Connection lost after 1.3 seconds

@@ -42,6 +42,8 @@ Example IaC outcome:
 ![[Pasted image 20260705163928.png]]
 
 
+![[Pasted image 20260711145701.png]]
+
 ---
 
 ### Terraform Introduction and AWS Setup

