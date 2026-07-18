@@ -119,3 +119,6 @@ Next day:
 
 
 ![[Pasted image 20260704164454.png]]
+
+
+![[Pasted image 20260716190606.png]]

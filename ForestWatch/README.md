@@ -5,9 +5,10 @@ Rules so far:
 - Fast Password Spraying 
 - Brute Force
 - Access to lsass.exe with high privileges
+- Kerberoasting
 
 TBD Full CKC detection:
-Kerberoasting
+
 DCSync
 Golden Ticket
 Lateral Movement

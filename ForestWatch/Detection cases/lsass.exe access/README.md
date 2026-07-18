@@ -43,4 +43,4 @@ After this, there were less false positives, but one was still visible - Wazuh a
 
 
 Detection of mimikatz and procdump on lsass.exe. Wazuh was filtered from reappearing via Rule 6:
-![[Pasted image 20260714182907.png]]
+![](../../Images/Pasted%20image%2020260714182907.png)

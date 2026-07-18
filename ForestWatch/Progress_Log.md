@@ -29,13 +29,13 @@ This document serves as a record of the development process, milestones achieved
 
 
 Using an old laptop with 32GB RAM + Cockpit to host Windows Server Desktop be like:  
-![[Pasted image 20260709164045.png]]
+![](Images/Pasted%20image%2020260709164045.png)
 - - -
 
 
-![[Pasted image 20260709174057.png]]
+![](Images/Pasted%20image%2020260709174057.png)
 
-![[Pasted image 20260709180728.png]]
+![](Images/Pasted%20image%2020260709180728.png)
 
 
-![[Pasted image 20260711145549.png]]
+![](Images/Pasted%20image%2020260711145549.png)
