@@ -69,5 +69,68 @@
     <group>compromised_account, high_priority,</group>
   </rule>
   
+  
+    <!-- Rule 5: lsass.exe access -->
+  <rule id="100300" level="16" ignore="3">
+    <!-- Rule 61612 = Sysmon - Event 10-->
+    <if_sid>61612</if_sid>
+    <field name="win.eventdata.targetImage" type="pcre2">(?i)lsass</field>
+    <field negate="yes" name="win.eventdata.grantedAccess" type="pcre2">0x1000|0x1400|0x101400|0x101000|0x101001|0x100000|0x100040|0x3200|0x40|0x3200|0x3000|0x3600|0x2000</field>
+    <description>Sysmon: Potential lsass.exe dump - High privilege access</description>
+    <mitre>
+      <id>T1003.001</id>
+    </mitre>
+  </rule>
+  
+    <!-- Rule 6: Allow Wazuh access lsass.exe without alert -->
+  <rule id="100301" level="0" >
+    <if_sid>100300</if_sid>
+    <field name="win.eventdata.sourceImage" type="pcre2">^(?i)C:\\\\Program Files \(x86\)\\\\ossec-agent\\\\wazuh-agent\.exe$</field>
+    <description>Sysmon: Potential lsass.exe dump - Disable alert for Wazuh access</description>
+    <mitre>
+      <id>T1003.001</id>
+    </mitre>
+  </rule>
+  
+    <!-- Rule 7: Detect Kerberos service ticket with RC4-HMAC encryption -->
+  <rule id="100401" level="14" ignore="3">
+    <if_sid>60106, 92651</if_sid>
+    <field name="win.system.eventID">^4769$</field>
+    <field name="win.eventdata.ticketEncryptionType">^0x17$</field>
+    <description>Possible Kerberoasting: RC4 TGS request detected from $(win.eventdata.ipAddress)</description>
+    <mitre>
+      <id>T1558.003</id>
+    </mitre>
+  </rule>
+  
+  
+    <!-- Rule 8: Detect DCSync -->
+  <rule id="100501" level="14">
+    <if_sid>60103</if_sid>
+    <field name="win.system.eventID">^4662$</field>
+    <field name="win.eventdata.accessMask">0x100</field>
+    <field name="win.eventdata.properties" type="pcre2">1131f6ad-9c07-11d1-f79f-00c04fc2dcd2</field>
+    <field name="win.eventdata.subjectUserName" negate="yes" type="pcre2">\$$|^MSOL_</field>
+    <description>Possible DCSync: Event 4662 with DS-Replication-Get-Changes-All detected from user $(win.eventdata.subjectUserName)</description>
+    <mitre>
+      <id>T1003.006</id>
+    </mitre>
+  </rule>
+  
+    <!-- Rule 9: Detect Replication without Get-Changes-All -->
+  <rule id="100502" level="8">
+    <if_sid>60103</if_sid>
+    <field name="win.system.eventID">^4662$</field>
+    <field name="win.eventdata.properties" type="pcre2">1131f6aa-9c07-11d1-f79f-00c04fc2dcd2|89e95b76-444d-4c62-991a-0facbeda640c</field>
+    <field name="win.eventdata.properties" negate="yes" type="pcre2">1131f6ad-9c07-11d1-f79f-00c04fc2dcd2</field>
+    <field name="win.eventdata.subjectUserName" negate="yes" type="pcre2">\$$|^MSOL_</field>
+    <description>Possible DCSync: Event 4662 without DS-Replication-Get-Changes-All detected from user $(win.eventdata.subjectUserName)</description>
+    <mitre>
+      <id>T1003.006</id>
+    </mitre>
+  </rule>
+  
+  
+  
 
 </group>

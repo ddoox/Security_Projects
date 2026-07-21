@@ -13,7 +13,7 @@ I had to overwrite default Wazuh rule 61612 - it's enabled by default with level
 
 After this dumping lsass.exe was detected successfully, but I had to fine-tune the alert as there was a lot of noise. Looking at Elastic guide I've implemented ignoring attempts with privileges not enough to dump the process(PROCESS_VM_READ - 0x0010)- https://www.elastic.co/guide/en/security/8.19/suspicious-lsass-process-access.html
 
-After this, there were less false positives, but one was still visible - Wazuh agent... Added one extra rule for disabling alert if SourceImage was equal to Wazuh agent path(in real case scenario this would be insecure without implementation of integrity checks)
+After this, there were less false positives, but one was still visible - Wazuh agent... Added one extra rule for disabling alert if SourceImage was equal to Wazuh agent path(in real case scenario additional integrity checks should be implemented to check whitelisted processes)
 
 ```
     <!-- Rule 5: lsass.exe access -->

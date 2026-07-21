@@ -16,7 +16,8 @@ This document serves as a record of the development process, milestones achieved
 * 
 
 **✅ Accomplishments:**
-* 
+* Configured lab environment - ADDC, clients, sysmon logging
+* First detection rules created and tested
 * 
 
 **🐛 Decisions and Issues:**

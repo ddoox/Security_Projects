@@ -6,10 +6,11 @@ Rules so far:
 - Brute Force
 - Access to lsass.exe with high privileges
 - Kerberoasting
+- DCSync
 
 TBD Full CKC detection:
 
-DCSync
+
 Golden Ticket
 Lateral Movement
 GPO Abuse
