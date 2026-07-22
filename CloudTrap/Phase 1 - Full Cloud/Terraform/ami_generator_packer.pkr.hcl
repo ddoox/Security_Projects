@@ -25,12 +25,12 @@ source "amazon-ebs" "wazuh" {
       architecture         = "x86_64"
     }
     most_recent = true
-    owners      = ["amazon"] # Official Amazon account ID
+    owners      = ["amazon"]
   }
 
   launch_block_device_mappings {
-    device_name           = "/dev/xvda" # Domyślna nazwa dla Amazon Linux 2023
-    volume_size           = 30          # Zwiększ na minimum 30-50 GB
+    device_name           = "/dev/xvda"
+    volume_size           = 30
     volume_type           = "gp3"
     delete_on_termination = true
   }
@@ -51,7 +51,7 @@ source "amazon-ebs" "honeypot" {
       architecture         = "x86_64"
     }
     most_recent = true
-    owners      = ["amazon"] # Official Amazon account ID
+    owners      = ["amazon"]
   }
   ssh_username = "ec2-user"
 }
@@ -87,11 +87,6 @@ build {
       "sudo mv wazuh-install-files/wazuh-passwords.txt /root/wazuh-passwords.txt",
       "sudo chmod 600 /root/wazuh-passwords.txt",
       "sudo rm -rf wazuh-install.sh wazuh-install-files.tar wazuh-install-files"
-      // "sudo systemctl enable wazuh-indexer wazuh-manager filebeat wazuh-dashboard",      
-      // "sudo mkdir -p /etc/systemd/system/wazuh-dashboard.service.d /etc/systemd/system/filebeat.service.d",
-      // "printf '[Unit]\\nAfter=wazuh-indexer.service\\nWants=wazuh-indexer.service\\n' | sudo tee /etc/systemd/system/wazuh-dashboard.service.d/wait-indexer.conf",
-      // "printf '[Unit]\\nAfter=wazuh-indexer.service\\nWants=wazuh-indexer.service\\n' | sudo tee /etc/systemd/system/filebeat.service.d/wait-indexer.conf",
-      // "sudo systemctl daemon-reload"
     ]
   }
   

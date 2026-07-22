@@ -7,7 +7,6 @@ provider "aws" {
 
 resource "aws_vpc" "honeypot_vpc" {
     cidr_block = "10.0.0.0/16"
-    # Enable DNS for VPC Endpoints
     enable_dns_support   = true
     enable_dns_hostnames = true
 }
@@ -39,26 +38,8 @@ resource "aws_route_table" "public_route_table" {
     }
 }
 
-# resource "aws_route_table" "private_route_table" {
-#     vpc_id = aws_vpc.honeypot_vpc.id
-# }
-
-# Temporary NAT Gateway for private subnet access to the Internet
-# resource "aws_eip" "nat_eip" {
-#   domain = "vpc"
-# }
-
-# resource "aws_nat_gateway" "honeypot_nat" {
-#     allocation_id = aws_eip.nat_eip.id
-#     subnet_id     = aws_subnet.public_subnet.id
-# }
-
 resource "aws_route_table" "private_route_table" {
     vpc_id = aws_vpc.honeypot_vpc.id
-    # route {
-    #         cidr_block     = "0.0.0.0/0"
-    #         nat_gateway_id = aws_nat_gateway.honeypot_nat.id
-    #     }
 }
 
 resource "aws_route_table_association" "public_route_table_association" {
@@ -75,13 +56,9 @@ resource "aws_route_table_association" "private_route_table_association" {
 # Instances
 
 resource "aws_instance" "wazuh" {
-    # ami           = "ami-08f44e8eca9095668"
     ami = data.aws_ami.latest_wazuh_image.id
     instance_type = "m7i-flex.large"
     vpc_security_group_ids = [
-        # aws_security_group.allow_ssh_wazuh.id,
-        # aws_security_group.temporary_allow_Internet.id,
-        # aws_security_group.allow_inbound_http.id,
         aws_security_group.wazuh_manager_ports.id,
         aws_security_group.ec2_ssm_outbound.id
     ]
@@ -99,7 +76,6 @@ resource "aws_instance" "wazuh" {
 }
 
 resource "aws_instance" "honeypot" {
-    # ami           = "ami-08f44e8eca9095668"
     ami = data.aws_ami.latest_honeypot_image.id
     instance_type = "t3.micro"
     count = 3
@@ -113,7 +89,6 @@ resource "aws_instance" "honeypot" {
     key_name = var.key_name
     subnet_id = aws_subnet.public_subnet.id
     availability_zone = var.availability_zone
-    # private_ip = var.honeypot_ip
 }
 
 

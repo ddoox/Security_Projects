@@ -12,32 +12,6 @@ variable "wazuh_manager_ip" {
   default = env("TF_VAR_wazuh_manager_ip")
 }
 
-# source "amazon-ebs" "wazuh" {
-#   ami_name      = "wazuh-server-{{timestamp}}"
-#   instance_type = "m7i-flex.large"
-#   region        = "us-east-1"
-  
-#   source_ami_filter {
-#     filters = {
-#       name                = "al2023-ami-2023.*-x86_64"
-#       root-device-type    = "ebs"
-#       virtualization-type = "hvm"
-#       architecture         = "x86_64"
-#     }
-#     most_recent = true
-#     owners      = ["amazon"] # Official Amazon account ID
-#   }
-
-#   launch_block_device_mappings {
-#     device_name           = "/dev/xvda" # Domyślna nazwa dla Amazon Linux 2023
-#     volume_size           = 30          # Zwiększ na minimum 30-50 GB
-#     volume_type           = "gp3"
-#     delete_on_termination = true
-#   }
-
-#   ssh_username = "ec2-user"
-# }
-
 source "amazon-ebs" "honeypot" {
   ami_name      = "honeypot-{{timestamp}}"
   instance_type = "t3.micro"
@@ -51,7 +25,7 @@ source "amazon-ebs" "honeypot" {
       architecture         = "x86_64"
     }
     most_recent = true
-    owners      = ["amazon"] # Official Amazon account ID
+    owners      = ["amazon"]
   }
   ssh_username = "ec2-user"
 }
@@ -59,7 +33,6 @@ source "amazon-ebs" "honeypot" {
 build {
   name = "wazuh-project"
   sources = [
-    # "source.amazon-ebs.wazuh",
     "source.amazon-ebs.honeypot"
   ]
 
@@ -71,30 +44,7 @@ build {
     inline = [
       "sudo dnf update -y",
     ]
-  }
-  
-  # # Provisioner for Wazuh instance
-  # provisioner "shell" {
-  #   only = ["amazon-ebs.wazuh"]
-  #   environment_vars = [
-  #     "WAZUH_MANAGER=${var.wazuh_manager_ip}"
-  #   ]
-  #   inline = [
-  #     "curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh",
-  #     "sudo bash ./wazuh-install.sh -a",
-  #     "sudo sed -i 's/^enabled=1/enabled=0/' /etc/yum.repos.d/wazuh.repo",
-  #     "sudo tar -xvf wazuh-install-files.tar wazuh-install-files/wazuh-passwords.txt",
-  #     "sudo mv wazuh-install-files/wazuh-passwords.txt /root/wazuh-passwords.txt",
-  #     "sudo chmod 600 /root/wazuh-passwords.txt",
-  #     "sudo rm -rf wazuh-install.sh wazuh-install-files.tar wazuh-install-files"
-  #     // "sudo systemctl enable wazuh-indexer wazuh-manager filebeat wazuh-dashboard",      
-  #     // "sudo mkdir -p /etc/systemd/system/wazuh-dashboard.service.d /etc/systemd/system/filebeat.service.d",
-  #     // "printf '[Unit]\\nAfter=wazuh-indexer.service\\nWants=wazuh-indexer.service\\n' | sudo tee /etc/systemd/system/wazuh-dashboard.service.d/wait-indexer.conf",
-  #     // "printf '[Unit]\\nAfter=wazuh-indexer.service\\nWants=wazuh-indexer.service\\n' | sudo tee /etc/systemd/system/filebeat.service.d/wait-indexer.conf",
-  #     // "sudo systemctl daemon-reload"
-  #   ]
-  # }
-  
+  }  
   # Provisioner for Honeypot instance
   provisioner "shell" {
     only = ["amazon-ebs.honeypot"]

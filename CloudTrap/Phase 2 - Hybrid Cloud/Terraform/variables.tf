@@ -43,16 +43,6 @@ variable "key_name" {
     default     = "My_SSH_Pair"
 }
 
-# variable "wazuh_manager_ip" {
-#     description = "IP address of the Wazuh manager"
-#     type        = string
-# }
-
-# variable "honeypot_ip" {
-#     description = "IP address of the honeypot"
-#     type        = string
-# }
-
 variable "honeypot_hostnames" {
   type    = list(string)
   default = ["prod-db-01", "mail-server", "gateway-03", "dev-redis", "prod-db-01", "test-web-01"]

@@ -1,6 +1,4 @@
 # Reguired Endpoints for SSM (AWS Systems Manager) to work in a private subnet without internet access
-
-
 resource "aws_vpc_endpoint" "ssm" {
   vpc_id              = aws_vpc.honeypot_vpc.id
   service_name        = "com.amazonaws.${var.region}.ssm"
