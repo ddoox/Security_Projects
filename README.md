@@ -4,7 +4,7 @@ Welcome to my cybersecurity portfolio repository! This repository serves as a hu
 
 ## 📂 Featured Projects
 
-- [**CloudTrap: AWS Honeypot & Wazuh SIEM**](./CloudTrap "null") A cloud-native cybersecurity lab deployed on AWS and provisioned entirely with Terraform. It features a Cowrie honeypot to capture SSH/Telnet brute-force attacks and malicious payloads, integrated with a Wazuh SIEM for real-time threat detection. The project highlights secure, isolated VPC networking and is designed to evolve into an hybrid cloud architecture using home server with KVM and WireGuard.
+- [**CloudTrap: AWS Honeypot & Wazuh SIEM**](./CloudTrap) A cloud-native cybersecurity lab deployed on AWS and provisioned entirely with Terraform. It features a Cowrie honeypot to capture SSH/Telnet brute-force attacks and malicious payloads, integrated with a Wazuh SIEM for real-time threat detection. The project highlights secure, isolated VPC networking and is designed to evolve into an hybrid cloud architecture using home server with KVM and WireGuard.
 
 
 ## 🚀 Upcoming Projects & Labs
@@ -34,8 +34,8 @@ Beyond building projects, I actively sharpen my practical skills through hands-o
 
 Feel free to explore the project folders above, and check out my profiles below:
 
-- [TryHackMe](https://tryhackme.com/p/ddoox "null")
+- [TryHackMe](https://tryhackme.com/p/ddoox)
 
-- [Credly](https://www.credly.com/users/dominik.dudek.sec "null")
+- [Credly](https://www.credly.com/users/dominik.dudek.sec)
 
-- [LinkedIn](https://www.linkedin.com/in/dominik-dudek-sec "null")
+- [LinkedIn](https://www.linkedin.com/in/dominik-dudek-sec)
