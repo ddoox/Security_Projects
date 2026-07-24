@@ -6,9 +6,9 @@ It was easy to write detection rule, but it was not so easy to get it working. O
 
 Events from ADDC and client are exactly the same - version 2.
 
-tcpdump on on wazuh manager showing almost same traffic in case of kerberoasting
+tcpdump on wazuh manager showing almost same traffic in case of kerberoasting
 
-After enabling Wazuh archieve I can see that the log is generated and send to manger, so it have to be dropped later:
+After enabling Wazuh archive I can see that the log is generated and sent to manager, so it has to be dropped later:
 ![](../../Images/Pasted%20image%2020260716170343.png)
 
 Compared both logs in wazuh logtest, but in both case I've got "no decoder matched".

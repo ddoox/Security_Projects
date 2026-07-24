@@ -4,18 +4,18 @@ Welcome to my cybersecurity portfolio repository! This repository serves as a hu
 
 ## 📂 Featured Projects
 
-- [**CloudTrap: AWS Honeypot & Wazuh SIEM**](./CloudTrap) A cloud-native cybersecurity lab deployed on AWS and provisioned entirely with Terraform. It features a Cowrie honeypot to capture SSH/Telnet brute-force attacks and malicious payloads, integrated with a Wazuh SIEM for real-time threat detection. The project highlights secure, isolated VPC networking and is designed to evolve into an hybrid cloud architecture using home server with KVM and WireGuard.
+- [**CloudTrap: AWS Honeypot & Wazuh SIEM**](./CloudTrap) A cloud-native cybersecurity lab deployed on AWS and provisioned entirely with Terraform. It features a Cowrie honeypot to capture SSH/Telnet brute-force attacks and malicious payloads, integrated with a Wazuh SIEM for real-time threat detection. The project highlights secure, isolated VPC networking and is designed to evolve into a hybrid cloud architecture using a home server with KVM and WireGuard.
+
+- [**ForestWatch: Active Directory Attack & Detection Lab**](./ForestWatch) A Windows Server 2025 Active Directory lab monitored with Sysmon and a Wazuh SIEM. It simulates common AD attacks — password spraying, brute force, LSASS credential dumping, Kerberoasting, DCSync, and Golden Ticket — and pairs each with custom detection rules mapped to MITRE ATT&CK, documented as per-technique case studies.
 
 
 ## 🚀 Upcoming Projects & Labs
 
 * **CloudTrap Phase 3 & 4: SOAR & Threat Intelligence Integration** - Expanding the current cloud architecture by integrating Wazuh with a SOAR platform for automated remediation, and deploying a MISP server to manage and utilize captured IoCs.
 
-* **Active Directory Attack & Detection Simulation** - Building a Windows domain environment monitored by Sysmon to simulate common AD attacks, engineer detection rules, and analyze malicious behavior in a centralized SIEM. 
-
 * **Vulnerability Management Lifecycle Lab** - Performing infrastructure scans using Nessus/OpenVAS to practice risk assessment, vulnerability prioritization, and patch management/remediation. 
 
-* **Malware Analysis Sandbox Environment** - Setting up an isolated, safe-to-fail environment dedicated to performing static/dynamic analysis on payloads captured by the honeypot.
+* **Malware Analysis Sandbox Environment** - Setting up an isolated, safe-to-fail environment dedicated to performing static/dynamic analysis on payloads captured by the honeypots.
 
 ## 🛠️ Skills & Technologies Demonstrated
 

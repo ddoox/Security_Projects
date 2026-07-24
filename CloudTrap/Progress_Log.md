@@ -75,7 +75,7 @@ Example IaC outcome:
 ![Wazuh_Dashboard](Images/Wazuh_dashboard_after_installation.png)
 
 
-Wazuh acces without Internet access
+Wazuh access without Internet access
 ![](Images/Pasted%20image%2020260702170740.png)
 
 
@@ -94,9 +94,6 @@ Some IPs
 
 Few more hotspots before leaving setup for night:
 ![](Images/Pasted%20image%2020260702205900.png)
-=======
-
-
 
 
 ![](Images/Pasted%20image%2020260703171321.png)
