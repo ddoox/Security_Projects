@@ -1,11 +1,45 @@
+<!--
+
+ RULE INDEX
+   Rule  | Detection                                   | ATT&CK    | Level
+   ======================================================================
+   100110  Failed network logon (building block)         .            3
+   100111  Successful network logon (building block)     .            3
+   100210  Fast password spraying (15 fails / 2 min)     T1110.003   14
+   100211  Spraying followed by successful logon         T1078       16
+   100212  Brute force, single account from one IP       T1110.001   14
+   100213  Brute force followed by successful logon      T1078       16
+   100300  High privilege handle access to lsass.exe     T1003.001   16
+   100301  Suppress lsass access by wazuh-agent.exe      T1003.001    0
+   100401  Kerberoasting, RC4 (0x17) TGS request         T1558.003   14
+   100501  DCSync, DS-Replication-Get-Changes-All        T1003.006   14
+   100502  Replication without Get-Changes-All           T1003.006    8
+   100601  Golden Ticket, KDC PAC failure (Event 37)     T1558.001   13
+   100602  Golden Ticket, KDC PAC failure (Event 38)     T1558.001   13
+   100603  Golden Ticket, known tooling command lines    T1558.001   13
+   100604  Service ticket granted (building block)       .            3
+   100605  Same account, tickets from multiple IPs       T1550.003   14
+
+ ID ALLOCATION
+   1001xx  building blocks (logon events)
+   1002xx  password spraying / brute force
+   1003xx  credential dumping (LSASS)
+   1004xx  Kerberoasting
+   1005xx  DCSync
+   1006xx  Golden Ticket / ticket reuse
+
+-->
+
 <group name="windows, active_directory, custom_rules,">
+
+
 
   <!-- Failed Network Logons -->
   <rule id="100110" level="3">
     <if_sid>60122</if_sid>
     <description>ADDC: Failed Network Logon - Account $(win.eventdata.targetUserName)</description>
   </rule>
-  
+
   <!-- Successful Network Logons -->
   <rule id="100111" level="3">
     <if_sid>92652</if_sid>
@@ -13,10 +47,7 @@
     <description>ADDC: Successful Network Logon - Account $(win.eventdata.targetUserName)</description>
   </rule>
 
-
-
-
-  <!-- Rule 1: Fast Password Spraying - 15 attempts in 2 mins - 1 alert per 60 sec(ignore="60") -->
+  <!-- Rule 1: Fast Password Spraying - 15 attempts in 2 mins - 1 alert per 60 sec (ignore="60") -->
   <rule id="100210" level="14" frequency="15" timeframe="120" ignore="60">
     <if_matched_sid>100110</if_matched_sid>
     <same_field>win.eventdata.ipAddress</same_field>
@@ -29,9 +60,9 @@
     <group>authentication_failures,</group>
   </rule>
 
-  <!-- Rule 2: Fast Password Spraying success - Successful Logon from IP where Password Spraying was detected before-->
+  <!-- Rule 2: Fast Password Spraying success - Successful Logon from IP where Password Spraying was detected before -->
   <rule id="100211" level="16" timeframe="600">
-    <!-- If Fast spraying is detected(rule 100210) and from the same IP (<same_field>) successful logon is detected (rule 100111)-->
+    <!-- If Fast spraying is detected (rule 100210) and from the same IP (<same_field>) successful logon is detected (rule 100111) -->
     <if_matched_sid>100210</if_matched_sid>
     <if_sid>100111</if_sid>
     <same_field>win.eventdata.ipAddress</same_field>
@@ -41,7 +72,6 @@
     </mitre>
     <group>compromised_account, high_priority,</group>
   </rule>
-
 
   <!-- Rule 3: Brute Force from same IP -->
   <rule id="100212" level="14" frequency="5" timeframe="600">
@@ -55,8 +85,8 @@
     </mitre>
     <group>authentication_failures,</group>
   </rule>
-  
-    <!-- Rule 4: Successful Brute Force from same IP -->
+
+  <!-- Rule 4: Successful Brute Force from same IP -->
   <rule id="100213" level="16" timeframe="600">
     <if_matched_sid>100212</if_matched_sid>
     <if_sid>100111</if_sid>
@@ -68,11 +98,12 @@
     </mitre>
     <group>compromised_account, high_priority,</group>
   </rule>
-  
-  
-    <!-- Rule 5: lsass.exe access -->
+
+
+
+  <!-- Rule 5: lsass.exe access -->
   <rule id="100300" level="16" ignore="3">
-    <!-- Rule 61612 = Sysmon - Event 10-->
+    <!-- Rule 61612 = Sysmon - Event 10 -->
     <if_sid>61612</if_sid>
     <field name="win.eventdata.targetImage" type="pcre2">(?i)lsass</field>
     <field negate="yes" name="win.eventdata.grantedAccess" type="pcre2">0x1000|0x1400|0x101400|0x101000|0x101001|0x100000|0x100040|0x3200|0x40|0x3200|0x3000|0x3600|0x2000</field>
@@ -81,9 +112,9 @@
       <id>T1003.001</id>
     </mitre>
   </rule>
-  
-    <!-- Rule 6: Allow Wazuh access lsass.exe without alert -->
-  <rule id="100301" level="0" >
+
+  <!-- Rule 6: Allow Wazuh access lsass.exe without alert -->
+  <rule id="100301" level="0">
     <if_sid>100300</if_sid>
     <field name="win.eventdata.sourceImage" type="pcre2">^(?i)C:\\\\Program Files \(x86\)\\\\ossec-agent\\\\wazuh-agent\.exe$</field>
     <description>Sysmon: Potential lsass.exe dump - Disable alert for Wazuh access</description>
@@ -91,8 +122,10 @@
       <id>T1003.001</id>
     </mitre>
   </rule>
-  
-    <!-- Rule 7: Detect Kerberos service ticket with RC4-HMAC encryption -->
+
+
+
+  <!-- Rule 7: Detect Kerberos service ticket with RC4-HMAC encryption -->
   <rule id="100401" level="14" ignore="3">
     <if_sid>60106, 92651</if_sid>
     <field name="win.system.eventID">^4769$</field>
@@ -102,9 +135,10 @@
       <id>T1558.003</id>
     </mitre>
   </rule>
-  
-  
-    <!-- Rule 8: Detect DCSync -->
+
+
+
+  <!-- Rule 8: Detect DCSync -->
   <rule id="100501" level="14">
     <if_sid>60103</if_sid>
     <field name="win.system.eventID">^4662$</field>
@@ -116,8 +150,8 @@
       <id>T1003.006</id>
     </mitre>
   </rule>
-  
-    <!-- Rule 9: Detect Replication without Get-Changes-All -->
+
+  <!-- Rule 9: Detect Replication without Get-Changes-All -->
   <rule id="100502" level="8">
     <if_sid>60103</if_sid>
     <field name="win.system.eventID">^4662$</field>
@@ -129,8 +163,60 @@
       <id>T1003.006</id>
     </mitre>
   </rule>
-  
-  
-  
+
+
+
+  <!-- Rule 10: Detect Failed Golden Ticket attempt or misconfig - missing PAC -->
+  <rule id="100601" level="13">
+    <if_sid>61102</if_sid>
+    <field name="win.system.eventID">^37$</field>
+    <field name="win.system.providerName">^Microsoft-Windows-Kerberos-Key-Distribution-Center</field>
+    <description>Possible Golden Ticket attempt: KDC PAC validation failure (Event 37) - TGT without new PAC</description>
+    <mitre>
+      <id>T1558.001</id>
+    </mitre>
+  </rule>
+
+  <!-- Rule 11: Detect Failed Golden Ticket attempt or misconfig - wrong RID. Matches by group (other approach, broader but more costly) instead of another Wazuh rule id -->
+  <rule id="100602" level="13">
+    <if_group>windows</if_group>
+    <field name="win.system.eventID">^38$</field>
+    <field name="win.system.providerName">^Microsoft-Windows-Kerberos-Key-Distribution-Center</field>
+    <description>Possible Golden Ticket attempt: KDC PAC validation failure (Event 38) - TGT without correct SID</description>
+    <mitre>
+      <id>T1558.001</id>
+    </mitre>
+  </rule>
+
+  <!-- Rule 12: Detect common commands used in Golden Ticket acquire -->
+  <rule id="100603" level="13">
+    <if_sid>61603</if_sid> <!-- Sysmon Event 1: Process Creation -->
+    <field name="win.eventdata.commandLine" type="pcre2">(?i)kerberos::golden|kerberos::ptt|ticketer\.py|KRB5CCNAME</field>
+    <description>Golden Ticket attempt: Common tooling detected</description>
+    <mitre>
+      <id>T1558.001</id>
+    </mitre>
+  </rule>
+
+  <!-- Rule 13: Successful service ticket requests -->
+  <rule id="100604" level="3">
+    <if_sid>60106, 92651</if_sid>
+    <field name="win.system.eventID">^4769$</field>
+    <description>ADDC: Kerberos ticket service granted</description>
+  </rule>
+
+  <!-- Rule 14: Same account requesting tickets from different IPs -->
+  <rule id="100605" level="14" timeframe="900">
+    <if_matched_sid>100604</if_matched_sid>
+    <same_field>win.eventdata.targetUserName</same_field>
+    <different_field>win.eventdata.ipAddress</different_field>
+    <field name="win.eventdata.targetUserName" negate="yes" type="pcre2">\$@</field>
+    <description>Possible ticket reuse: $(win.eventdata.targetUserName) using Kerberos tickets from multiple hosts, last $(win.eventdata.ipAddress)</description>
+    <mitre>
+      <id>T1550.003</id>
+    </mitre>
+  </rule>
+
+
 
 </group>

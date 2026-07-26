@@ -4,7 +4,7 @@ Welcome to my cybersecurity portfolio repository! This repository serves as a hu
 
 ## 📂 Featured Projects
 
-- [**CloudTrap: AWS Honeypot & Wazuh SIEM**](./CloudTrap) A cloud-native cybersecurity lab deployed on AWS and provisioned entirely with Terraform. It features a Cowrie honeypot to capture SSH/Telnet brute-force attacks and malicious payloads, integrated with a Wazuh SIEM for real-time threat detection. The project highlights secure, isolated VPC networking and is designed to evolve into a hybrid cloud architecture using a home server with KVM and WireGuard.
+- [**CloudTrap: AWS Honeypot & Wazuh SIEM**](./CloudTrap) A cloud-native cybersecurity lab deployed on AWS and provisioned entirely with Terraform. It features a Cowrie honeypot to capture SSH/Telnet brute-force attacks and malicious payloads, integrated with a Wazuh SIEM for real-time threat detection. The project highlights secure, isolated VPC networking and in Phase 2 it evolved into a hybrid cloud architecture using a home server with KVM and Tailscale(WireGuard).
 
 - [**ForestWatch: Active Directory Attack & Detection Lab**](./ForestWatch) A Windows Server 2025 Active Directory lab monitored with Sysmon and a Wazuh SIEM. It simulates common AD attacks — password spraying, brute force, LSASS credential dumping, Kerberoasting, DCSync, and Golden Ticket — and pairs each with custom detection rules mapped to MITRE ATT&CK, documented as per-technique case studies.
 
@@ -21,11 +21,11 @@ Welcome to my cybersecurity portfolio repository! This repository serves as a hu
 
 Throughout the projects in this repository, I utilize and showcase the following technologies and skills:
 
-- **Cloud & Infrastructure:** AWS (EC2, VPC, IAM), Terraform, KVM, VPN (WireGuard).
+- **Cloud & Infrastructure:** AWS (EC2, VPC, IAM), Terraform, Packer, KVM, VPN (Tailscale - WireGuard).
 
 - **Security & SIEM:** Wazuh, Cowrie Honeypot, Log Analysis, Custom Detection Rules.
 
-- **Systems Administration:** Linux (Debian/Ubuntu/Arch), Secure Network Configuration, Firewall Management (iptables/UFW).
+- **Systems Administration:** Linux (Debian/Ubuntu/Arch), Secure Network Configuration, Firewall Management (iptables/UFW), Active Directory, Windows(Windows Server 2025), Sysmon. 
 
 
 ## 📫 Profiles & Continuous Learning
