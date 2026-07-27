@@ -11,19 +11,19 @@ clean_old_amis() {
     echo "----------------------------------------"
     echo "Processing: $name (Pattern: $pattern)"
 
-    # Pobieranie posortowanej listy ID
+    # Fetch the list of AMI IDs sorted by creation date
     ALL_AMIS=$(aws ec2 describe-images --owners self --filters "Name=name,Values=$pattern" --query 'sort_by(Images, &CreationDate)[*].ImageId' --output text)
 
-    # Poprawne konwertowanie wyjścia AWS CLI na tablicę
+    # Convert the AWS CLI output into a bash array
     AMI_ARRAY=($ALL_AMIS)
 
-    # Sprawdzenie długości tablicy
+    # Check the array length
     if [ ${#AMI_ARRAY[@]} -le 1 ]; then
         echo "Found ${#AMI_ARRAY[@]} AMI(s). Nothing to delete."
         return
     fi
 
-    # Ucinamy ostatni element (najnowsze AMI), zostawiamy resztę do usunięcia
+    # Drop the last element (the newest AMI) and keep the rest for deletion
     AMIS_TO_DELETE=("${AMI_ARRAY[@]:0:${#AMI_ARRAY[@]}-1}")
 
     echo "Found ${#AMI_ARRAY[@]} AMIs total. Deleting the oldest ${#AMIS_TO_DELETE[@]}..."

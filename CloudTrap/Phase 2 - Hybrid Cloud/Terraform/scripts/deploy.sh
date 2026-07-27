@@ -1,3 +1,8 @@
+#!/bin/bash
+set -e
+
+cd "$(dirname "$0")/.."
+
 export TF_VAR_wazuh_manager_ip="100.73.81.69"
 
 
