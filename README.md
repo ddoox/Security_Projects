@@ -4,7 +4,7 @@ Welcome to my cybersecurity portfolio repository! This repository serves as a hu
 
 ## 📂 Featured Projects
 
-- [**CloudTrap: AWS Honeypot & Wazuh SIEM**](./CloudTrap) A cloud-native cybersecurity lab deployed on AWS and provisioned entirely with Terraform. It features a Cowrie honeypot to capture SSH/Telnet brute-force attacks and malicious payloads, integrated with a Wazuh SIEM for real-time threat detection. The project highlights secure, isolated VPC networking and in Phase 2 it evolved into a hybrid cloud architecture using a home server with KVM and Tailscale(WireGuard).
+- [**CloudTrap: AWS Honeypot & Wazuh SIEM**](./CloudTrap) A cloud-native cybersecurity lab deployed on AWS and provisioned entirely with Terraform. It features a Cowrie honeypot to capture SSH brute-force attacks and malicious payloads, integrated with a Wazuh SIEM for real-time threat detection. The project highlights secure, isolated VPC networking and in Phase 2 it evolved into a hybrid cloud architecture using a home server with KVM and Tailscale(WireGuard).
 
 - [**ForestWatch: Active Directory Attack & Detection Lab**](./ForestWatch) A Windows Server 2025 Active Directory lab monitored with Sysmon and a Wazuh SIEM. It simulates common AD attacks — password spraying, brute force, LSASS credential dumping, Kerberoasting, DCSync, and Golden Ticket — and pairs each with custom detection rules mapped to MITRE ATT&CK, documented as per-technique case studies.
 
@@ -30,7 +30,7 @@ Throughout the projects in this repository, I utilize and showcase the following
 
 ## 📫 Profiles & Continuous Learning
 
-Beyond building projects, I actively sharpen my practical skills through hands-on challenges on TryHackMe. You can also verify my earned certifications on Credly.
+Beyond building projects, I actively sharpen my practical skills through hands-on challenges on TryHackMe. I am currently working toward RHCSA to deepen my Linux system administration and hardening skills. You can also verify my earned certifications on Credly.
 
 Feel free to explore the project folders above, and check out my profiles below:
 
