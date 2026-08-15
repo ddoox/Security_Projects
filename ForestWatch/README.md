@@ -23,9 +23,8 @@ Built on a Windows Server 2025 domain with joined clients, this project uses **S
 - Endpoint visibility with Sysmon, including credential-access detection.
 - Documented detection-engineering process: attack execution, tuning, false-positive suppression, and lessons learned.
 
-The complete custom ruleset lives in [`AD_Lab_rules.xml`](./AD_Lab_rules.xml). Each detection case documents its own development process, debugging steps, and tuning decisions.
+The complete custom ruleset lives in [AD_Lab_rules.xml](./AD_Lab_rules.xml). Each detection case documents its own development process, debugging steps, and tuning decisions.
 
 **Roadmap:**
+- [**Microsoft Sentinel layer**](./Sentinel/README) — porting existing cases to KQL
 - **Lateral Movement — remote service execution** T1021
-- **ACL Abuse — privilege escalation via delegated rights**
-- Expanding toward broader Cyber Kill Chain coverage

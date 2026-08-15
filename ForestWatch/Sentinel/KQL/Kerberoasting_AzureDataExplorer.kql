@@ -1,0 +1,39 @@
+// Sample Events provided below
+let SecurityEvents = datatable(
+        TimeGenerated:datetime,
+        EventID:int,
+        Computer:string,
+        TargetUserName:string,
+        ServiceName:string,
+        TicketEncryptionType:string,
+        SessionKeyEncryptionType:string,
+        IpAddress:string,
+    )
+[
+    // Alert scenario
+    datetime(2026-07-17T00:52:54Z), 4769, "WIN-48ROSMO0G6V.ad.lab", "client1@AD.LAB", "ODIS_BLANKENSHIP", "0x17", "0x12", "::ffff:192.168.122.92",
+    // Older alert scenario
+    datetime(2026-07-16T00:52:54Z), 4769, "WIN-48ROSMO0G6V.ad.lab", "client1@AD.LAB", "ODIS_BLANKENSHIP", "0x17", "0x12", "::ffff:192.168.122.92",
+    //  Other EventID
+    datetime(2026-07-17T00:52:54Z), 5769, "WIN-48ROSMO0G6V.ad.lab", "client1@AD.LAB", "ODIS_BLANKENSHIP", "0x17", "0x12", "::ffff:192.168.122.92", 
+    // AES
+    datetime(2026-07-17T00:52:54Z), 4769, "WIN-48ROSMO0G6V.ad.lab", "client1@AD.LAB", "ODIS_BLANKENSHIP", "0x12", "0x12", "::ffff:192.168.122.92",
+    // Machine Account requesting
+    datetime(2026-07-17T00:52:54Z), 4769, "WIN-48ROSMO0G6V.ad.lab", "WIN-48ROSMO0G6V$@AD.LAB", "ODIS_BLANKENSHIP", "0x17", "0x12", "::ffff:192.168.122.92",
+    // Machine Account target
+    datetime(2026-07-17T00:52:54Z), 4769, "WIN-48ROSMO0G6V.ad.lab", "client1@AD.LAB", "WIN-48ROSMO0G6V$", "0x17", "0x12", "::ffff:192.168.122.92",    
+    // krbtgt Service
+    datetime(2026-07-17T00:52:54Z), 4769, "WIN-48ROSMO0G6V.ad.lab", "client1@AD.LAB", "krbtgt", "0x17", "0x12", "::ffff:192.168.122.92",
+    // krbtgt Service upper case
+    datetime(2026-07-17T00:52:54Z), 4769, "WIN-48ROSMO0G6V.ad.lab", "client1@AD.LAB", "KRBTGT", "0x17", "0x12", "::ffff:192.168.122.92"    
+];
+SecurityEvents
+| where EventID == 4769
+| extend AccountName = split(TargetUserName, "@")
+| where AccountName[0] !endswith "$"
+| where TicketEncryptionType == "0x17"
+| where ServiceName !~ "krbtgt" and ServiceName !endswith "$"
+| where TimeGenerated between (datetime(2026-07-17) .. datetime(2026-07-18))
+//
+//
+| project TimeGenerated, EventID, Computer, AccountName[0], ServiceName, TicketEncryptionType, IpAddress
