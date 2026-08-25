@@ -75,13 +75,20 @@ Hybrid Analysis report for the dropped binary
 
 ![](Images/Pasted%20image%2020260703172224.png)
 
+Further analysis revealed that this is the example of Panchan cryptominer botnet infection
+
+![](Images/Pasted%20image%2020260825192700.png)
+
+
+
+![](Images/Pasted%20image%2020260825192744.png)
 ### 4 July 2026 
 
 Critical alerts jumped from 1 to 21 in a day.
 
 ![](Images/Pasted%20image%2020260704164117.png)
 
-Four behaviours stand out:
+Three behaviours stand out:
 
 - System reconnaissance — uname -a, uname -s -v -n -r -m, cat /proc/cpuinfo, ifconfig, echo Hi | cat -n
 - Checking for miners — ps | grep '[Mm]iner' and ps -ef | grep '[Mm]iner'
