@@ -2,4 +2,3 @@
 *.pem
 *.tfstate*
 .terraform/
-Python_exercises/
