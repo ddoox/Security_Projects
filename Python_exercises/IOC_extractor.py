@@ -1,10 +1,12 @@
 from pathlib import Path
 import re
 import collections
-
+import ipaddress
 
 # TODO: Valid IPs, uniq, defanged 
 ip_pattern = re.compile(r'(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)')
+
+#TODO: option to exclude private/multicast
 
 
 def ip_extract_from_file(file_path):
@@ -50,3 +52,22 @@ print()
 print(sorted_IP_dict)
 print("function: ")
 print(ip_extract_from_file(file_path))
+print()
+
+
+print("Private")
+print(ipaddress.ip_address("192.168.0.1").is_private)
+print(ipaddress.ip_address("192.169.0.1").is_private)
+print(ipaddress.ip_address("100.64.0.1").is_private)
+print(ipaddress.ip_address("0.169.0.1").is_private)
+print(ipaddress.ip_address("127.169.0.1").is_private)
+print()
+
+
+print("Global")
+print(ipaddress.ip_address("192.168.0.1").is_global)
+print(ipaddress.ip_address("192.169.0.1").is_global)
+print(ipaddress.ip_address("100.64.0.1").is_global)
+print(ipaddress.ip_address("0.169.0.1").is_global)
+print(ipaddress.ip_address("127.169.0.1").is_global)
+
